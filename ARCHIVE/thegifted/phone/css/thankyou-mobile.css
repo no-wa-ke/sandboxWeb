@@ -1,0 +1,69 @@
+@-ms-viewport
+{
+	width: 380px;
+}
+
+@-webkit-viewport
+{
+	width: 380px;
+}
+
+@-o-viewport
+{
+	width: 380px;
+}
+
+@-moz-viewport
+{
+	width: 380px;
+}
+
+@viewport
+{
+	width: 380px;
+}
+
+html
+{
+	background-color: #7F7F7F;
+}
+
+#page
+{
+	z-index: 1;
+	width: 323px;
+	min-height: 141.39018126888215px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	padding: 174px 29px 254.60981873111785px 28px;
+}
+
+#u2221-4
+{
+	z-index: 2;
+	width: 323px;
+	min-height: 30px;
+	line-height: 1.75;
+	font-size: 36px;
+	text-align: center;
+	font-family: alex-brush, cursive;
+	font-weight: 400;
+	position: relative;
+}
+
+#u2222
+{
+	z-index: 6;
+	width: 163px;
+	margin-left: 76px;
+	margin-top: 30px;
+	position: relative;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

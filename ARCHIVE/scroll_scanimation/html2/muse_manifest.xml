@@ -1,0 +1,17 @@
+<manifest alg="2" build="704" opt="true" iceEnabled="true">
+  <folder name="css">
+    <file name="site_global.css" crc="3837790900"/>
+    <file name="index.css" crc="120911321" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3828297711" ref="index"/>
+    <file name="museutils.js" crc="4210811981" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="3895911286" ref="index"/>
+    <file name="jquery.watch.js" crc="4199601726" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="mask2.png" crc="363241891" ref="index"/>
+    <file name="geom_scanimage.png" crc="4081541725" ref="index"/>
+  </folder>
+  <file name="index.html" crc="219583785" mt="1375901963871"/>
+</manifest>

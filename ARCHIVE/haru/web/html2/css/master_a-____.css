@@ -1,0 +1,141 @@
+#u740_img
+{
+	vertical-align: top;
+}
+
+#u2117-4
+{
+	background-color: transparent;
+	line-height: 1.75;
+	font-family: quicksand, sans-serif;
+	font-weight: 700;
+	position: fixed;
+}
+
+#u2117-4:hover p
+{
+	color: #E0E0E0;
+	visibility: inherit;
+}
+
+#u2112
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	position: fixed;
+}
+
+#u740,#u2108
+{
+	position: fixed;
+}
+
+.ie #u2108
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+
+#u2114-4
+{
+	background-color: transparent;
+	line-height: 1.75;
+	font-family: quicksand, sans-serif;
+	font-weight: 700;
+	position: fixed;
+}
+
+#u2114-4:hover p
+{
+	color: #E0E0E0;
+	visibility: inherit;
+}
+
+#u2115-4
+{
+	background-color: transparent;
+	line-height: 1.75;
+	font-family: quicksand, sans-serif;
+	font-weight: 700;
+	position: fixed;
+}
+
+#u2115-4:hover p
+{
+	color: #E0E0E0;
+	visibility: inherit;
+}
+
+#u2109,#u2110
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	position: fixed;
+}
+
+#u2116-4
+{
+	background-color: transparent;
+	line-height: 1.75;
+	font-family: quicksand, sans-serif;
+	font-weight: 700;
+	position: fixed;
+}
+
+#u2116-4:hover p
+{
+	color: #E0E0E0;
+	visibility: inherit;
+}
+
+#u2111
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	position: fixed;
+}
+
+#u2118-4
+{
+	background-color: transparent;
+	line-height: 1.75;
+	font-family: quicksand, sans-serif;
+	font-weight: 700;
+	position: fixed;
+}
+
+#u2118-4:hover p
+{
+	color: #E0E0E0;
+	visibility: inherit;
+}
+
+#u2117-4.MuseLinkActive p,#u2114-4.MuseLinkActive p,#u2115-4.MuseLinkActive p,#u2116-4.MuseLinkActive p,#u2118-4.MuseLinkActive p
+{
+	color: #000000;
+	visibility: inherit;
+	text-decoration: underline;
+}
+
+#u2113
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	position: fixed;
+}
+
+#u107-4
+{
+	font-size: 10px;
+	line-height: 1.75;
+	font-family: quicksand, sans-serif;
+	font-weight: 700;
+	position: fixed;
+}
+

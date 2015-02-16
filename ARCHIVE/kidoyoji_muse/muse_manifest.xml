@@ -1,0 +1,23 @@
+<manifest alg="2" build="6" opt="true">
+  <folder name="css">
+    <file name="site_global.css" crc="4003109849"/>
+    <file name="master_a-____.css" crc="173968528" ref="index"/>
+    <file name="index.css" crc="166501889" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <folder name="1.1">
+      <file name="jquery-1.7.min.js" crc="4285342938" ref="index"/>
+      <file name="museutils.js" crc="110351884" ref="index"/>
+      <file name="pie.js" crc="3786417276" ref="index"/>
+      <file name="pie.htc" crc="354638364" ref="index"/>
+      <file name="jquery.tobrowserwidth.js" crc="4225798834" ref="index"/>
+      <file name="webpro.js" crc="171035655" ref="index"/>
+      <file name="musewpslideshow.js" crc="264849301" ref="index"/>
+      <file name="jquery.museoverlay.js" crc="4273343390" ref="index"/>
+    </folder>
+  </folder>
+  <folder name="images">
+    <file name="camodony_logo-01-u634.png" crc="4124342883" ref="index"/>
+  </folder>
+  <file name="index.html" crc="3874824277" mt="1350794388089"/>
+</manifest>

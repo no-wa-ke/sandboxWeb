@@ -1,0 +1,68 @@
+<manifest alg="2" build="557" opt="true">
+  <folder name="css">
+    <file name="site_global.css" crc="89652228"/>
+    <file name="index.css" crc="265626339" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3828297711" ref="index"/>
+    <file name="museutils.js" crc="4215913851" ref="index"/>
+    <file name="pie.js" crc="3786417276" ref="index"/>
+    <file name="webpro.js" crc="4060715896" ref="index"/>
+    <file name="musewpslideshow.js" crc="44180946" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="421226699" ref="index"/>
+    <file name="touchswipe.js" crc="261777990" ref="index"/>
+    <file name="jquery.watch.js" crc="4199601726" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="thegifted_master_logo_o-02.png" crc="3905538884" ref="index"/>
+    <file name="u207-4.png" crc="3771513340" ref="index"/>
+    <file name="u212-4.png" crc="526114379" ref="index"/>
+    <file name="u213-4.png" crc="4153489446" ref="index"/>
+    <file name="u1301-4.png" crc="4247724602" ref="index"/>
+    <file name="_mg_2254.jpg" crc="3857606214" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="_mg_2519.jpg" crc="147938680" ref="index"/>
+    <file name="_mg_2556.jpg" crc="493527455" ref="index"/>
+    <file name="_mg_5319.jpg" crc="272428634" ref="index"/>
+    <file name="_mg_2254212x141.jpg" crc="396155656" ref="index"/>
+    <file name="_mg_2519212x141.jpg" crc="3887774773" ref="index"/>
+    <file name="_mg_2556212x141.jpg" crc="181539542" ref="index"/>
+    <file name="_mg_5319212x141.jpg" crc="23253766" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="smallflower.jpg" crc="3849274890" ref="index"/>
+    <file name="bigflower.jpg" crc="3893065589" ref="index"/>
+    <file name="leaves.jpg" crc="532919387" ref="index"/>
+    <file name="smallflower212x141.jpg" crc="184833780" ref="index"/>
+    <file name="bigflower212x141.jpg" crc="223600586" ref="index"/>
+    <file name="leaves212x141.jpg" crc="38338344" ref="index"/>
+    <file name="1.jpg" crc="4189848450" ref="index"/>
+    <file name="2.jpg" crc="3992593500" ref="index"/>
+    <file name="3.jpg" crc="332839069" ref="index"/>
+    <file name="4.jpg" crc="216523715" ref="index"/>
+    <file name="5.jpg" crc="216378028" ref="index"/>
+    <file name="6.jpg" crc="4267614800" ref="index"/>
+    <file name="ear ring.jpg" crc="458067690" ref="index"/>
+    <file name="ear ring2.jpg" crc="85137229" ref="index"/>
+    <file name="ear ring3.jpg" crc="3979651990" ref="index"/>
+    <file name="ear ring4.jpg" crc="220832515" ref="index"/>
+    <file name="greek.jpg" crc="470041432" ref="index"/>
+    <file name="1145x103.jpg" crc="3825368401" ref="index"/>
+    <file name="2145x103.jpg" crc="66506989" ref="index"/>
+    <file name="3145x103.jpg" crc="451004022" ref="index"/>
+    <file name="4145x103.jpg" crc="428549160" ref="index"/>
+    <file name="5145x103.jpg" crc="420998755" ref="index"/>
+    <file name="6145x103.jpg" crc="4162538970" ref="index"/>
+    <file name="ear ring145x116.jpg" crc="3820116895" ref="index"/>
+    <file name="ear ring2145x116.jpg" crc="182855259" ref="index"/>
+    <file name="ear ring3145x116.jpg" crc="3888569154" ref="index"/>
+    <file name="ear ring4145x116.jpg" crc="339067011" ref="index"/>
+    <file name="greek145x116.jpg" crc="3981485823" ref="index"/>
+    <file name="u887-4.png" crc="196013081" ref="index"/>
+    <file name="u1314-4.png" crc="4086892025" ref="index"/>
+    <file name="u1001-4.png" crc="196013081" ref="index"/>
+    <file name="u1002-4.png" crc="196013081" ref="index"/>
+    <file name="thegifted_master_logo_black-03.png" crc="128025508" ref="index"/>
+    <file name="u214-4.png" crc="503920115" ref="index"/>
+  </folder>
+  <file name="index.html" crc="24628979" mt="1362498507800"/>
+</manifest>

@@ -1,0 +1,172 @@
+html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 994px;
+	min-height: 417px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	padding-bottom: 53px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pu3294-6
+{
+	width: 0.01px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: -9px;
+}
+
+#u3294-6
+{
+	z-index: 2;
+	width: 878px;
+	min-height: 9px;
+}
+
+#ppu3883-4
+{
+	width: 0.01px;
+	margin-left: 248px;
+	margin-top: 95px;
+	position: relative;
+}
+
+#pu3883-4
+{
+	width: 0.01px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u3883-4
+{
+	z-index: 18;
+	margin-left: 20px;
+	position: relative;
+}
+
+#pu3879
+{
+	width: 0.01px;
+	margin-top: 4px;
+	position: relative;
+}
+
+#u3879
+{
+	z-index: 14;
+	width: 162px;
+	position: relative;
+	margin-right: -10000px;
+	left: 13px;
+}
+
+#u3885-4
+{
+	z-index: 26;
+	position: relative;
+	width: 186px;
+	margin-right: -10000px;
+	margin-top: 167px;
+}
+
+#u3881
+{
+	z-index: 16;
+	width: 166px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 27px;
+	left: 321px;
+}
+
+#u3879_img,#u3881_img
+{
+	vertical-align: top;
+}
+
+#u3884-4
+{
+	z-index: 22;
+	position: relative;
+	width: 149px;
+	margin-right: -10000px;
+	margin-top: 1px;
+	left: 329px;
+}
+
+#u3886-4
+{
+	z-index: 30;
+	position: relative;
+	width: 86px;
+	margin-right: -10000px;
+	margin-top: 199px;
+	left: 360px;
+}
+
+#u3883-4_img,#u3885-4_img,#u3884-4_img,#u3886-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+
+#u3907-6
+{
+	z-index: 34;
+	width: 149px;
+	line-height: 1.75;
+	text-align: justify;
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, ＭＳ Ｐゴシック, MS PGothic, sans-serif;
+	margin-left: 267px;
+	margin-top: 49px;
+	position: relative;
+}
+
+#u3390
+{
+	z-index: 12;
+	width: 22px;
+	margin-right: -10000px;
+	margin-top: -13px;
+	left: 969px;
+}
+
+#u3388
+{
+	z-index: 8;
+	width: 23px;
+	margin-right: -10000px;
+	margin-top: -13px;
+	left: 1008px;
+}
+
+#u3392
+{
+	z-index: 10;
+	width: 23px;
+	margin-right: -10000px;
+	margin-top: -13px;
+	left: 1047px;
+}
+
+body
+{
+	padding-top: 42px;
+	padding-bottom: 21px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

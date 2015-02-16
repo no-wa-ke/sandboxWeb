@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  var globalTag = null;
+  var pageNum = null;
+  var ppp = 100; // posts per page
+  var totalPosts = null;
+  var tum;
+  var tumblrPage = "harunakworks.tumblr.com"; // URL
+  $(document).ready(function() {
+
+      var tagLength = function(p) {
+          if (p.tags) {
+              var tagNum = p.tags.length;
+              var tagHTML = "";
+              for (b = 0; b < tagNum; b++) {
+                  tagHTML = tagHTML + "<span class='post-tag'>" + p.tags[b] + "</span> ";
+              }
+              return tagHTML;
+          }
+          else {
+              return " ";
+          }
+      };
+
+      var blogWriter = function(data) {
+          $(".tumblr-post").remove();
+      $(".load-more").remove();
+          var tumblr = data;
+        tum = tumblr;
+      totalPosts = tumblr["posts-total"];
+      console.log("total posts: " + tumblr["posts-total"]);
+      console.log("loaded posts: " + tumblr.posts.length);
+          console.log(tumblr);
+
+          var postsNum = ppp;
+          var photo500 = ['photo-url-500'];
+      if (tumblr.posts.length < postsNum) { // if there are less posts than you want to display, thats the new post display count
+        postsNum = tumblr.posts.length;
+      }
+
+          for (i = 0; i < postsNum; i++) {
+              var p = tumblr.posts[i];
+        var newD = p.date.split(" ");
+        switch (newD[2]) {
+          case "Jan":
+            newD[2] = "January"
+          break;
+          case "Feb":
+            newD[2] = "February"
+          break;
+          case "Mar":
+            newD[2] = "March"
+          break;
+          case "Apr":
+            newD[2] = "April"
+          break;
+          case "Jun":
+            newD[2] = "June"
+          break;
+          case "Jul":
+            newD[2] = "July"
+          break;
+          case "Aug":
+            newD[2] = "August"
+          break;
+          case "Sep":
+            newD[2] = "September"
+          break;
+          case "Oct":
+            newD[2] = "October"
+          break;
+          case "Nov":
+            newD[2] = "November"
+          break;
+          case "Dec":
+            newD[2] = "December"
+          break;
+        }
+        var pDate = newD[2] + " " + newD[1] + ", " + newD[3];
+              switch (p.type) { //check post type
+
+              case "photo":
+                  if (p.photos.length < 1) { // photo: 一つなら
+            var photoImg = "<img src='" + p[photo500] + "' />";
+
+              if (p.width > 500) {
+                photoImg = "<a class='block-img' href='"+ p["photo-url-1280"] +"'><img src='" + p[photo500] + "' /></a>";
+              }
+                      $(".tumblr-wrap").append("<div class='tumblr-post'><a class='date-link' href='" + p.url + "'>" + pDate + "</a>"+ photoImg + p["photo-caption"] + "<div class='post-tags'>" + tagLength(p) + "</div></div>");
+                  }
+
+                  else { // else :(photosetなら)
+                      var photoLen = p.photos.length;
+                      var toAppend = "<div class='tumblr-post'><a class='date-link' href='" + p.url + "'>" + pDate + "</a>";
+                      for (c = 0; c < photoLen; c++) {
+              var photosImg = "<img src='" + p.photos[c][photo500] + "' />";
+              if (p.photos[c].width > 200) {
+                photosImg = "<a class='block-img' href='"+ p.photos[c]["photo-url-1280"] +"'><img src='" + p.photos[c][photo500] + "' /></a>" + "<p class='p-caption'>" + p.photos[c].caption + "</p>";
+              }
+                          toAppend = toAppend + photosImg;
+                      }
+                      toAppend = toAppend + p["photo-caption"] + "<div class='post-tags'>" + tagLength(p) + "</div></div>";
+                      $(".tumblr-wrap").append(toAppend);
+                  }
+              break;
+
+              case "regular": //text post
+          var postTitle = p["regular-title"];
+          if (postTitle !== null) {
+            var titleString = "<h2>" + postTitle + "</h2>";
+          }
+          else {
+            var titleString = " ";
+          }
+                  $(".tumblr-wrap").append("<div class='tumblr-post'>" + titleString + "<a class='date-link' href='" + p.url + "'>" + pDate + "</a><div class='post-text'>" + p["regular-body"] + "</div><div class='post-tags'>" + tagLength(p) + "</div></div>");
+              break;
+        case "video":
+          $(".tumblr-wrap").append("<div class='tumblr-post'><a class='date-link' href='" + p.url + "'>" + pDate + "</a>" + p["video-player-500"] + "<div class='post-text'>" + p["video-caption"] + "</div><div class='post-tags'>" + tagLength(p) + "</div></div>");
+        break;
+        case "link":
+        var linkTitle = p["link-text"];
+        if (linkTitle !== "") {
+          var titleString = linkTitle;
+        }
+        else {
+          var titleString = p["link-url"];
+        }
+                $(".tumblr-wrap").append("<div class='tumblr-post'><a class='date-link' href='" + p["post_url"] + "'>" + pDate + "</a><div class='post-text'><a class='post-link' href='" + p["link-url"] + "'>" + titleString + "</a><div class='link-description'>"+ p["link-description"] +"</div></div><div class='post-tags'>" + tagLength(p) + "</div></div>");
+        break;
+              }
+          }
+      if (tumblr.posts.length > ppp) {
+        $('.tumblr-wrap').append("<span class='load-more'>Load more...</span>");
+      }
+      };
+
+      var filterTag = function(tag) {
+      pageNum = null;
+          globalTag = tag;
+          $(".tumblr-post").remove();
+          var calling = 'http://'+ tumblrPage +'/api/read/json?callback=?&tagged=' + tag;
+          $.getJSON(calling, function(data) {
+        if (data["posts-total"] == 0 ) {
+          $(".load-more").remove();
+          $(".no-posts").remove();
+          $(".get-news").remove();
+          globalTag = null;
+          $(".tumblr-wrap").append("<p class='no-posts'>There are no posts under " + tag + "</p><span class='get-news'>Back to News</span>");
+          console.log("there are no posts with that tag");
+        }
+        else {
+          blogWriter(data);
+                console.log(calling);
+                console.log("filtered by " + tag);
+        }
+          });
+      };
+    var getNews = function(){
+        $.getJSON('http://'+ tumblrPage +'/api/read/json?callback=?', function(data) {
+            blogWriter(data);
+        });
+    };
+    getNews();
+
+      $(".post-tag").live("click", function() {
+          filterTag($(this).text());
+      });
+      $(".get-news").live("click", function() {
+      $(".get-news").remove();
+      $(".no-posts").remove();
+          getNews();
+      });
+
+      $(".load-more").live("click", function() {
+
+      if (globalTag == null && pageNum == null) { // if there is not a tag and is first page
+            $.getJSON('http://'+ tumblrPage +'/api/read/json?callback=?&start=' + ppp, function(data) {
+              blogWriter(data);
+          });
+      }
+
+      else if (globalTag !== null && pageNum !== null) {  // if there is a current tag and it's not the first page
+          $.getJSON('http://'+ tumblrPage +'/api/read/json?callback=?&tagged=' + globalTag + '&start=' + (pageNum+1)*ppp, function(data) {
+              blogWriter(data);
+          });
+      }
+
+      else if (globalTag !== null && pageNum == null) { // if there is a current tag
+          $.getJSON('http://'+ tumblrPage +'/api/read/json?callback=?&tagged=' + globalTag + '&start=' + ppp, function(data) {
+              blogWriter(data);
+          });
+      }
+      else  { // (globalTag == null && pageNum !== null) if it's not the first page
+          $.getJSON('http://'+ tumblrPage +'/api/read/json?callback=?&start=' + (pageNum+1)*ppp, function(data) {
+              blogWriter(data);
+          });
+      }
+      pageNum++;
+      console.log("pageNum is " + pageNum +", and globalTag is " + globalTag);
+      window.scrollTo(0, 0);
+      });
+  });
+
+
+  </script>
+  <style>
+  .load-more {
+      cursor: pointer;
+  }
+  .load-more:hover {
+      text-decoration:underline;
+  }​
+  </style>
+</head>
+<body>
+  <div class="tumblr-wrap">
+
+  </div>​
+  <ul class="designations">
+    <li class="post-tag"> </li>
+    <li class="post-tag">Museum</li>
+    <li class="post-tag">Hospitality</li>
+    <li class="post-tag">Restaurant</li>
+    <li class="post-tag">Office</li>
+    <li class="post-tag">Retail</li>
+    <li class="post-tag">Residential</li>
+    <li class="post-tag">Interior</li>
+    <li class="post-tag">Landscape</li>
+  <ul>
+  </body>
+</html>

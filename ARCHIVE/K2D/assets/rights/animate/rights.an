@@ -1,0 +1,52 @@
+{
+
+	"HTMLFileName":"rights.html",
+	"PubUseChromeFrameInstaller":"false",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+            \"ElementKeyframes\": {\
+                \"${_Stage}\": [], \
+                \"${_k2dHP2-11}\": []\
+            }\
+      }\
+   }},\
+\"プリローダー\": {\
+   \"timelines\": {\
+\
+   }},\
+\"下位レベル\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"PosterImagePath":"images/Poster.png",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"PosterCapturePos":"1500",
+	"PubChromeFrameInstallerPrompt":"none",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"symbol_stage":{
+		"defaultStageParentHeight":"207px",
+		"dummyStageParentHeight":"207px",
+		"defaultStageParentWidth":"246px",
+		"dummyStageParentWidth":"246px",
+		"element_${_Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"element_${_k2dHP2-11}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"animationEnabled":"true",
+			"timelineColor":"0x91c767"}},
+	"PubWeb":"false",
+	"CompZoomFactor":"100",
+	"viewStartY":"0",
+	"pixelsPerMs":"0.2",
+	"usedBOM":"false",
+	"nextElementColorIndex":"3",
+	"stage-Default Timeline_playhead_ms":"1500",
+	"TransitionIdCounter":"5",
+	"StageZoomFactor":"91",
+	"PubDPS":"true"}

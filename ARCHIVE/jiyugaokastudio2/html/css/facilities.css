@@ -1,0 +1,341 @@
+.html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-top: 20px;
+	margin-bottom: 91px;
+}
+
+#u1451-4
+{
+	z-index: 38;
+	width: 278px;
+	min-height: 32px;
+	top: 35px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+#ppu2770-4
+{
+	width: 0.01px;
+	left: -19px;
+	position: relative;
+}
+
+#pu2770-4
+{
+	width: 0.01px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 30px;
+}
+
+#pu2770-4_position_content
+{
+	margin-top: -50px;
+	margin-bottom: 388px;
+}
+
+#u2770-4
+{
+	z-index: 66;
+	width: 187px;
+	min-height: 32px;
+	top: 86px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+#u2771-4
+{
+	z-index: 70;
+	width: 212px;
+	min-height: 32px;
+	top: 137px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+#u1457-4
+{
+	z-index: 62;
+	width: 59px;
+	min-height: 6px;
+	top: 209px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+#u1455-4
+{
+	z-index: 54;
+	width: 69px;
+	min-height: 6px;
+	top: 257px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+#u1452-4
+{
+	z-index: 42;
+	width: 59px;
+	min-height: 6px;
+	top: 304px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+#u1453-4
+{
+	z-index: 46;
+	width: 59px;
+	min-height: 6px;
+	top: 352px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+#u1454-4
+{
+	z-index: 50;
+	width: 199px;
+	min-height: 6px;
+	top: 399px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+#u1923
+{
+	z-index: 2;
+	width: 571px;
+	border-color: #000000;
+	background-color: #FFFF32;
+	background-color: rgba(255, 255, 0, 0.8);
+	position: relative;
+	margin-right: -10000px;
+	left: 325px;
+	padding: 41px 25px 17px 38px;
+	-pie-background: rgba(255, 255, 0, 0.8);
+}
+
+#u2757-4
+{
+	z-index: 26;
+	width: 41px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: transparent;
+	font-size: 19px;
+	font-family: ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ Ｐ明朝, MS PMincho, serif;
+	position: relative;
+}
+
+#u1930-4
+{
+	z-index: 11;
+	width: 197px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: transparent;
+	font-size: 19px;
+	font-family: ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ Ｐ明朝, MS PMincho, serif;
+	margin-top: 6px;
+	position: relative;
+}
+
+#u2758-4
+{
+	z-index: 30;
+	width: 41px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: transparent;
+	text-align: left;
+	font-size: 19px;
+	font-family: ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ Ｐ明朝, MS PMincho, serif;
+	margin-top: 19px;
+	position: relative;
+}
+
+#u1931-4
+{
+	z-index: 15;
+	width: 197px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: transparent;
+	font-size: 19px;
+	font-family: ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ Ｐ明朝, MS PMincho, serif;
+	margin-top: 4px;
+	position: relative;
+}
+
+#u2759-4
+{
+	z-index: 34;
+	width: 197px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: transparent;
+	text-align: left;
+	font-size: 19px;
+	font-family: ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ Ｐ明朝, MS PMincho, serif;
+	margin-top: 43px;
+	position: relative;
+}
+
+#u1924-8
+{
+	z-index: 3;
+	width: 565px;
+	min-height: 69px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: transparent;
+	line-height: 1;
+	margin-top: 40px;
+	position: relative;
+}
+
+#slideshowu2503
+{
+	z-index: 19;
+	width: 0.01px;
+	height: 240px;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 42px;
+	left: 589px;
+}
+
+#u2528
+{
+	position: absolute;
+	width: 524px;
+	height: 422px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #191919;
+	background-color: rgba(0, 0, 0, 0.9);
+	top: 120px;
+	left: -86px;
+	-pie-background: rgba(0, 0, 0, 0.9);
+}
+
+#u2528popup
+{
+	z-index: 20;
+}
+
+#u2596
+{
+	z-index: 21;
+	width: 480px;
+	height: 360px;
+	background-color: transparent;
+	margin-right: -10000px;
+	position: relative;
+	top: 22px;
+	left: 22px;
+}
+
+#u2596_img
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#u2540
+{
+	position: absolute;
+	width: 335px;
+	left: 8px;
+}
+
+#u2540popup
+{
+	z-index: 23;
+}
+
+#u2599
+{
+	z-index: 24;
+	width: 335px;
+	height: 240px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u2599:hover
+{
+	margin: 0px -10000px 0px 0px;
+}
+
+#u2599_clip
+{
+	overflow: hidden;
+	width: 335px;
+	height: 240px;
+}
+
+#u2599_img
+{
+	margin-left: -13px;
+	margin-right: -13px;
+}
+
+.SSFirstButton,.SSPreviousButton,.SSNextButton,.SSLastButton,.SSSlideLink,.SSCloseButton /* slideshowFreeStyle */
+{
+	cursor: pointer;
+}
+
+.SSSlideLoading /* slideshowFreeStyle */
+{
+	background: url("../images/loading.gif") no-repeat center center;
+}
+
+#u1456-4
+{
+	z-index: 58;
+	width: 59px;
+	min-height: 6px;
+	top: 447px;
+	left: 50%;
+	margin-left: -499px;
+}
+
+body
+{
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

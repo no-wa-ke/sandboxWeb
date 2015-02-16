@@ -1,0 +1,42 @@
+# CASE EXAMPLE------------------------------------
+# a = 3
+
+# case  a
+# when 1
+# 	puts "a is 1"
+# when 2
+# 	puts "a is 2 "
+# else
+# 	puts "a is undefined"
+# end
+
+# OBJECTS AND CLASSES-------------------------------
+
+class BankAccount
+	def initialize (name)
+		@transactions = [] # hold anything that happened in this method
+		@balance = 0 # initial global variable @
+	end
+
+	def deposit
+		print "How much would you like to deposit?"
+		amount = gets.chomp  # chomp takes any input
+		@balance += amount.to_f # add to balance variable using .to_f method. call global variable
+		puts "$#{amount} deposited." # call amount variable using #{local value}
+	end
+
+	def show_balance
+		puts "Your balance is $#{@balance}" # add to balance variable using #{@global}
+	end
+
+end
+
+	bank_account = BankAccount.new ("Yoji Kido") # initialize input
+	bank_account.class # => BankAccount
+	bank_account.deposit # run deposite method
+	bank_account.show_balance # finally show balance
+
+
+
+
+

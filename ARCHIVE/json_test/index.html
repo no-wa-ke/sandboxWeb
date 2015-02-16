@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>無題ドキュメント</title>
+    <style type="text/css">
+    #photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;
+
+    }
+    #tumblr_body img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="photos">
+      <script type="text/javascript" src="http://harunakworks.tumblr.com/api/read/json?num=50&type=photo"></script>
+      <script type="text/javascript">
+
+      shutokusu = 50;
+      for (i = 0; i < shutokusu; i++) {
+      photo = tumblr_api_read["posts"][i]["photo-url-400"]
+      _photo= tumblr_api_read["posts"][i]["photo-url-500"]
+      date = tumblr_api_read["posts"][i]["date"]
+      url = tumblr_api_read["posts"][i]["url"];
+      document.write('<div class="tumblr_body"><a href="',_photo, '"rel="lightbox[tumblr posts]><div class=tumblr_body><img src="',photo,'style="width:200px;height:auto;"></a></div>');
+      }
+      </script>
+    </body>
+  </html>

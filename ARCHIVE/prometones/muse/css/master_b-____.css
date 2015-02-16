@@ -1,0 +1,32 @@
+#u733-4
+{
+	position: fixed;
+}
+
+#u733-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+
+#u87-4,#u88-4,#u89-4,#u789-4
+{
+	font-weight: 400;
+	position: relative;
+}
+
+#u802,#u887
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u87-2,#u87-2,#u88-2,#u88-2,#u89-2,#u89-2,#u789-2,#u789-2
+{
+	font-size: 11px;
+	letter-spacing: 0px;
+	font-family: quicksand-n4, quicksand, sans-serif;
+}
+

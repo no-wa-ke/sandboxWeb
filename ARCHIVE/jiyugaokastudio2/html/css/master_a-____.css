@@ -1,0 +1,26 @@
+#u1451-4,#u2770-4,#u2771-4
+{
+	background-color: #FFFF00;
+	text-align: left;
+	color: #000000;
+	line-height: 1.75;
+	letter-spacing: 18px;
+	font-size: 18px;
+	font-family: quattrocento-sans, sans-serif;
+	font-weight: 700;
+	position: fixed;
+}
+
+#u1457-4,#u1455-4,#u1452-4,#u1453-4,#u1454-4,#u1456-4
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFF00;
+	text-align: left;
+	color: #000000;
+	line-height: 1.75;
+	font-family: ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ Ｐ明朝, MS PMincho, serif;
+	font-weight: bold;
+	position: fixed;
+}
+

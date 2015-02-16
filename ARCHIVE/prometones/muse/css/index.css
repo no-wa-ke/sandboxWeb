@@ -1,0 +1,80 @@
+html
+{
+	background-size: cover !important;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-khtml-background-size: cover;
+	-ms-background-size: cover;
+	background: #7F7F7F url("../images/prometones2.jpg") no-repeat left top scroll;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u59
+{
+	height: 0px;
+	position: relative;
+	width: 0px;
+	margin-top: 62px;
+}
+
+#pu897-4
+{
+	width: 0.01px;
+	padding-bottom: 69px;
+	margin-bottom: -10px;
+	position: relative;
+	margin-right: -1px;
+	margin-top: 441px;
+	left: 250px;
+}
+
+#u897-4
+{
+	z-index: 3;
+	width: 461px;
+	min-height: 26px;
+	bottom: 69px;
+	left: 50%;
+	margin-left: -231px;
+}
+
+#u897-4.MuseLinkActive
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 26px;
+	margin: 0px 0px 0px -231px;
+}
+
+#u898-4
+{
+	z-index: 7;
+	width: 75px;
+	min-height: 26px;
+	bottom: 26px;
+	left: 50%;
+	margin-left: -38px;
+}
+
+#u898-4.MuseLinkActive
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 26px;
+	margin: 0px 0px 0px -38px;
+}
+
+body
+{
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+

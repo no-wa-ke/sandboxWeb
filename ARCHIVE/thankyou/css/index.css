@@ -1,0 +1,58 @@
+html
+{
+	background-size: cover !important;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-khtml-background-size: cover;
+	-ms-background-size: cover;
+	background: #FFFFFF url("../images/jpeg_logo.gif") no-repeat center center scroll;
+}
+
+#page
+{
+	z-index: 1;
+	width: 398px;
+	min-height: 229px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 119px 281px 152px;
+}
+
+#u76
+{
+	z-index: 2;
+	width: 398px;
+	border-color: #000000;
+	background-color: #FFFFE7;
+	background-color: rgba(255, 255, 231, 0.69);
+	-pie-background: rgba(255, 255, 231, 0.69);
+	-moz-border-radius: 36px;
+	-webkit-border-radius: 36px;
+	-khtml-border-radius: 36px;
+	border-radius: 36px;
+	padding-bottom: 92px;
+	position: relative;
+}
+
+#u77-4
+{
+	z-index: 3;
+	width: 291px;
+	min-height: 46px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 1.75;
+	font-family: poiret-one-n4, poiret-one, sans-serif;
+	font-weight: 400;
+	position: relative;
+	margin-right: -291px;
+	margin-top: 91px;
+	left: 54px;
+}
+
+body
+{
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+

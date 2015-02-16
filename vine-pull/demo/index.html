@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Twitter &amp; Vine.co API Search - Tutorial Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="w">
+    <h1>Vine.co Instant Search</h1>
+    <p class="center">Enter a #hashtag or keyword(s) to search for related videos.</p>
+    
+    <form id="vineapi" name="vineapi" method="post" action="index.html">
+      <input type="text" name="hashtag" id="hashtag" tabindex="1" placeholder="ex: #funny">
+      <input type="submit" value="Search!" id="submitbtn" tabindex="2">
+    </form>
+  
+    <div id="loader"><img src="css/loader.gif" alt="loading..."></div>
+    <div id="videos" class="clearfix"></div>
+  </div><!-- @end #w -->
+
+<script type="text/javascript">
+$(function(){
+  var $loader = $('#loader');
+  var $videos = $('#videos');
+  
+  $('#vineapi').on('submit', function(e){
+    e.preventDefault();
+    
+    var keywords = $('#hashtag').val();
+    
+    $loader.show();
+    $videos.html('');
+
+    $.ajax({
+      type: 'GET',
+      url: 'lib/api.php',
+      data: {'hashtag': keywords},
+      dataType: 'json',
+      success: function(data){
+        // on success loop through tweet data
+        
+        // output message if 0 tweets were found
+        if(data.statuses.length === 0) {
+          $loader.hide();
+          $videos.html('<p>No results found.</p>');
+        }
+        
+        $.each(data.statuses, function(i,itm) {
+          // if the tweet has more than 1 link we do some parsing
+          if(itm.entities.urls.length > 0) { 
+            var shorturl = itm.entities.urls[0].display_url.substring(0,7);
+            var videourl = itm.entities.urls[0].expanded_url;
+          
+            if(shorturl == 'vine.co') {
+              $.ajax({
+                type: 'POST',
+                url: 'lib/curlinfo.php',
+                data: {"vidurl": videourl},
+                dataType: 'html',
+                success: function(img){
+                  if($loader.is(":visible")) { $loader.hide(); }
+                  
+                  if(img == "") { img = "img/default.jpg" }
+                  
+                  var newhtml = '<div class="video"><a target="_blank" href="'+videourl+'"><img src="'+img+'"></a></div>';
+                  
+                  $videos.append(newhtml);
+                }
+              });
+            } // end logic for video URL        
+          }
+        }); // end each loop
+      }
+    }); // end primary ajax call
+  }); // end click event handler
+});
+</script>
+</body>
+</html>

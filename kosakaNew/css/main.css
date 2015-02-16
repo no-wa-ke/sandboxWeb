@@ -1,0 +1,215 @@
+body {
+    overflow: hidden;
+    background-color: grey;
+}
+#container {
+    z-index: 1;
+}
+#head {
+    z-index: 9;
+    position: fixed;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    left: 0;
+    clear: both;
+    top: 3.3em;
+}
+#head img {
+    width: 80%;
+}
+.menu {
+    z-index: 9;
+    position: fixed;
+    display: block;
+    width: 60px;
+    margin-top: 170px;
+    margin-left: 50px;
+}
+.menu ul {
+    z-index: 9;
+    padding: 0px;
+    list-style-type: none;
+}
+.highlight {
+    width: 5em;
+    margin-top: auto;
+    background-color: white;
+}
+li.jump {
+    z-index: 9;
+    margin: 0 0 20px 0;
+    background-color: white;
+}
+li.jump a {
+    z-index: 9;
+    font-size: 14px;
+    text-decoration: none;
+}
+.postOut {} .tumblrPosts {
+    padding: 10px;
+    background: rgba(0, 0, 0, .05);
+    font-family: YuMincho, '游明朝', serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: justify;
+    font-size: 14px;
+    font-style: oblique;
+    width: 500px;
+}
+li.tTitle {
+    font-family: YuMincho, '游明朝', serif;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 22px;
+    border-bottom: solid;
+    border-width: 1px;
+    margin-bottom: 40px;
+}
+li.wTitle {
+    font-family: YuMincho, '游明朝', serif;
+    font-weight: bold;
+    text-align: left;
+    list-style-type: none;
+    font-size: 15px;
+    border-bottom: solid;
+    border-width: 1px;
+    margin-bottom: 100px;
+    font-style: oblique;
+}
+.footer {
+    z-index: 9;
+    display: block;
+    font-size: 10px;
+    width: 100%;
+    height: 30px;
+    margin-left: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /*background:#ee5;*/
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* for slides
+    * --------------------------------------- */
+
+.intro {
+    text-align: right;
+    font-size: 1.8em;
+    font-family: ‘Times New Roman’, Times, serif;
+    color: #333333;
+    width: 500px;
+    font-weight: lighter;
+    font-style: oblique;
+    border-color: #333333;
+    padding: 48px 0 10px 0;
+    margin-bottom: 10px;
+}
+/* Centered texts in each section
+    * --------------------------------------- */
+
+.linkFoot {
+    text-align: center;
+    font-size: 1em;
+    font-family: ‘Times New Roman’, Times, serif;
+    color: #333333;
+    width: 500px;
+    font-weight: lighter;
+    font-style: oblique;
+    border-top: solid;
+    border-width: 7px;
+    border-color: #333333;
+    padding: 40px 0 40px 0;
+}
+.section {
+    text-align: center;
+}
+/* Bottom menu
+    * --------------------------------------- */
+
+#infoMenu li a {
+    color: #fff;
+}
+.totalwrap {
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 240px;
+    display: block;
+}
+.mulWrap {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+    max-width: 500px;
+
+/*     -moz-column-count:3;
+    -moz-column-gap: 3%;
+    -moz-column-width: 30%;
+    -webkit-column-count:3;
+    -webkit-column-gap: 3%;
+    -webkit-column-width: 30%;
+    column-count: 3;
+    column-gap: 3%;
+    column-width: 30%;*/
+
+}
+.mulpic {
+     display: inline-block;
+
+    width: 244px;
+}
+.mulpic a img {
+
+
+   /* width: 244px;*/
+}
+.mulfirst {
+    display: inline-block;
+}
+.mulfirst img {
+    width: 500px;
+}
+
+.mulWrap img {} #tumblr-wrap {
+    margin-top: 50px;
+}
+
+.boxContainer {
+width: 500px;
+
+}
+.picBox{
+    height: auto;
+float:left;
+margin-top: 180px;
+
+}
+
+.profile{
+
+/*text-align: justify;
+width: 500px;
+font-size: 12px;
+float:right;
+position: relative;
+ bottom: 10%;
+
+*/
+float:right;
+text-align: justify;
+width: 300px;
+font-size: 12px;
+font-family: YuMincho, '游明朝', serif;
+}
+.contact{
+
+
+
+}

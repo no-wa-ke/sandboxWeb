@@ -1,0 +1,77 @@
+<manifest alg="2" build="2" opt="true">
+  <folder name="css">
+    <file name="site_global.css" crc="3835980900"/>
+    <file name="master_a-____--____.css" crc="509466721" ref="index"/>
+    <file name="master_a-____.css" crc="4131151646" ref="releases:about:videos"/>
+    <file name="releases.css" crc="4089716418" ref="releases"/>
+    <file name="about.css" crc="99619215" ref="about"/>
+    <file name="iefonts_about.css" crc="75867633" ref="about"/>
+    <file name="videos.css" crc="10671630" ref="videos"/>
+    <file name="index.css" crc="246549033" ref="index"/>
+    <file name="iefonts_index.css" crc="3964657887" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <folder name="animation-logo">
+      <folder name="edge_includes">
+        <file name="edge.1.0.0.min.js" crc="47829327" mt="1355305423000"/>
+        <file name="jquery-1.7.1.min.js" crc="111770969" mt="1355305423000"/>
+        <file name="jquery.easing.1.3.js" crc="24609341" mt="1355305423000"/>
+        <file name="json2_min.js" crc="4081928964" mt="1355305423000"/>
+      </folder>
+      <folder name="images">
+        <file name="Poster.png" crc="63582417" mt="1355305423000"/>
+        <file name="shinylogo.png" crc="254163783" mt="1355305423000"/>
+      </folder>
+      <file name="animation logo_edge.js" crc="111087017" mt="1355305423000"/>
+      <file name="animation logo_edgeActions.js" crc="4041202218" mt="1355305423000"/>
+      <file name="animation logo_edgePreload.js" crc="4120364527" mt="1355305423000"/>
+      <file name="animation logo.html" crc="3979334318" mt="1355305423000"/>
+    </folder>
+    <file name="untitled-2.an" crc="4254276672" mt="1355305382000"/>
+  </folder>
+  <folder name="scripts">
+    <folder name="1.1">
+      <file name="museredirect.js" crc="295330505" ref="index"/>
+      <file name="jquery-1.7.min.js" crc="4285342938" ref="index:releases:videos:about:phone>index:phone>mobile_about"/>
+      <file name="museutils.js" crc="3944585760" ref="index:releases:videos:about:phone>index:phone>mobile_about"/>
+      <file name="pie.js" crc="3786417276" ref="index:releases:videos:about:phone>index:phone>mobile_about"/>
+      <file name="pie.htc" crc="354638364" ref="index:releases:videos:about:phone>index:phone>mobile_about"/>
+      <file name="webpro.js" crc="4054559832" ref="index:videos:about:phone>index:phone>mobile_about"/>
+      <file name="musewpdisclosure.js" crc="4117077549" ref="index:about:phone>index:phone>mobile_about"/>
+      <file name="musewpslideshow.js" crc="215328106" ref="videos"/>
+      <file name="jquery.museoverlay.js" crc="4135412889" ref="videos"/>
+      <file name="touchswipe.js" crc="261777990" ref="videos"/>
+      <file name="jquery.watch.js" crc="346672883" ref="phone>index:phone>mobile_about"/>
+    </folder>
+  </folder>
+  <folder name="images">
+    <file name="logo_inv-01_1-02.png" crc="20869367" ref="index:releases:videos:about:phone>index"/>
+    <file name="u1251-4.png" crc="93507708" ref="index"/>
+    <file name="white_twitter.png" crc="4125608808" ref="index:about:phone>index:phone>mobile_about"/>
+    <file name="white_sound_cloud.png" crc="4016289242" ref="index:about:phone>index:phone>mobile_about"/>
+    <file name="white_facebook.png" crc="3905514056" ref="index:about:phone>index:phone>mobile_about"/>
+    <file name="white_youtube.png" crc="287546017" ref="index:about:phone>index:phone>mobile_about"/>
+    <file name="shinylogo.png" crc="3898899686" ref="releases:videos:about"/>
+    <file name="u1030-4.png" crc="93507708" ref="releases:videos:about"/>
+    <file name="スクリーンショット 2012-11-27 03657-u871.jpg" crc="369254481" ref="videos"/>
+    <file name="スクリーンショット 2012-11-27 04036-u878.jpg" crc="262359103" ref="videos"/>
+    <file name="スクリーンショット 2012-11-27 04650-u866.jpg" crc="156608983" ref="videos"/>
+    <file name="スクリーンショット 2012-11-27 04407-u898.jpg" crc="485709595" ref="videos"/>
+    <file name="logosdc.png" crc="10848912" ref="about:phone>mobile_about"/>
+    <file name="shinylogo173x77.png" crc="4195118478" ref="phone>index"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_a-____--____--____.css" crc="3785372741" ref="phone>mobile_about"/>
+      <file name="master_a-____--____.css" crc="3892850385" ref="phone>index"/>
+      <file name="index.css" crc="118157581" ref="phone>index"/>
+      <file name="mobile_about.css" crc="398580372" ref="phone>mobile_about"/>
+    </folder>
+    <file name="index.html" crc="3852032314" mt="1358221006100"/>
+    <file name="mobile_about.html" crc="448720773" mt="1358220983951"/>
+  </folder>
+  <file name="index.html" crc="262405396" mt="1358220508537"/>
+  <file name="releases.html" crc="395910000" mt="1358216627884"/>
+  <file name="videos.html" crc="3760919943" mt="1358216628578"/>
+  <file name="about.html" crc="3844059963" mt="1358216629171"/>
+</manifest>

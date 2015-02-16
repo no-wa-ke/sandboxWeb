@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #gray;
+  font: sans-serif;
+}
+
+video {
+  width: 320px;
+  height: 240px;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: center;
+}
+
+canvas {
+  width: 320px;
+  height: 240px;
+}

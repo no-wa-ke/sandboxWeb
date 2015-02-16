@@ -1,0 +1,72 @@
+body {
+    background: white;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8em;
+
+}
+video {
+    min-height: 100%;
+    min-width: 100%;
+    height: auto !important;
+    width: 100% !important;
+}
+.container {
+    width: 100%;
+    height: auto;
+}
+.description {
+    font-family: YuMincho, '游明朝', serif;
+    font-size: 20px;
+    text-align: left;
+    text-align: justify;
+    line-height: 2.2em;
+    width: 700px;
+    border-bottom: solid;
+    padding-bottom: 3em;
+}
+.profile {
+    font-family: YuMincho, '游明朝', serif;
+    font-size: 20px;
+    text-align: left;
+    text-align: justify;
+    line-height: 2.2em;
+    width: 700px;
+    border-bottom: solid;
+    padding-bottom: 3em;
+}
+
+.profileP{
+
+	font-size: 17px;
+}
+.title {
+    font-weight: bold;
+    font-size: 26px;
+    border-left: solid;
+    border-right: solid;
+    padding: 10px;
+}
+._link {
+    font-size: 20px;
+    font-style: oblique;
+	font-weight: bold;
+}
+.bottom {
+	text-align: center;
+	padding-bottom: 5em;
+}
+
+
+ul.links{margin:0;	font-family: "Courier New", Courier, monospace;}
+
+ul { padding: 0; }
+
+links
+a {}
+
+li {
+    display: inline;
+}

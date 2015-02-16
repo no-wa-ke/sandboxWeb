@@ -1,0 +1,52 @@
+<manifest alg="2" build="2" opt="true">
+  <folder name="css">
+    <file name="site_global.css" crc="3835980900"/>
+    <file name="thankyou.css" crc="436303298" ref="thankyou"/>
+    <file name="index.css" crc="273027724" ref="index"/>
+    <file name="iefonts_index.css" crc="4089115644" ref="index"/>
+    <file name="prometoneshavefun.css" crc="4050048832" ref="prometoneshavefun"/>
+  </folder>
+  <folder name="scripts">
+    <folder name="1.1">
+      <file name="jquery-1.7.min.js" crc="4285342938" ref="thankyou:prometoneshavefun:index:phone>index:phone>newsletter_mobile"/>
+      <file name="museutils.js" crc="3944585760" ref="thankyou:prometoneshavefun:index:phone>index:phone>newsletter_mobile"/>
+      <file name="pie.js" crc="3786417276" ref="thankyou:prometoneshavefun:index:phone>index:phone>newsletter_mobile"/>
+      <file name="pie.htc" crc="354638364" ref="thankyou:prometoneshavefun:index:phone>index:phone>newsletter_mobile"/>
+      <file name="webpro.js" crc="4054559832" ref="thankyou:index"/>
+      <file name="musewpslideshow.js" crc="215328106" ref="thankyou:index"/>
+      <file name="jquery.museoverlay.js" crc="4135412889" ref="thankyou:index"/>
+      <file name="touchswipe.js" crc="261777990" ref="thankyou:index"/>
+      <file name="jquery.musepolyfill.bgsize.js" crc="398106652" ref="prometoneshavefun:index:phone>index"/>
+      <file name="museredirect.js" crc="295330505" ref="index"/>
+      <file name="jquery.tobrowserwidth.js" crc="4237930348" ref="index:phone>index"/>
+      <file name="jquery.watch.js" crc="346672883" ref="phone>index:phone>newsletter_mobile"/>
+    </folder>
+  </folder>
+  <folder name="images">
+    <file name="jpeg_logo.gif" crc="19994657" ref="thankyou"/>
+    <file name="blank.gif" crc="4208392903" ref="thankyou"/>
+    <file name="loading.gif" crc="3815509949" ref="thankyou"/>
+    <file name="prometonesmobile-04.png" crc="4222968420" ref="prometoneshavefun:index:phone>index"/>
+    <file name="prometonesmobile-02.png" crc="4034574041" ref="index"/>
+    <file name="prometones_bacground_5.gif" crc="4055220024" ref="index"/>
+    <file name="yellow.gif" crc="3919580528" ref="index"/>
+    <file name="green.gif" crc="413086900" ref="index"/>
+    <file name="red.gif" crc="4070871189" ref="index"/>
+    <file name="8_1 -更新済み--02.png" crc="4220515997" ref="index:phone>index"/>
+    <file name="piano-02140x32.png" crc="4194448708" ref="index"/>
+    <file name="prometonesmobile-02276x105.png" crc="141743682" ref="phone>index"/>
+    <file name="piano-02.png" crc="3824509579" ref="phone>index"/>
+    <file name="piano-02187x43.png" crc="527967524" ref="phone>index"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="312996295" ref="phone>index"/>
+      <file name="newsletter_mobile.css" crc="532958380" ref="phone>newsletter_mobile"/>
+    </folder>
+    <file name="index.html" crc="4103247889" mt="1358511877312"/>
+    <file name="newsletter_mobile.html" crc="3839608159" mt="1358511561973"/>
+  </folder>
+  <file name="thankyou.html" crc="149923817" mt="1354436719473"/>
+  <file name="prometoneshavefun.html" crc="4238136714" mt="1358504486076"/>
+  <file name="index.html" crc="4227170661" mt="1358512623082"/>
+</manifest>

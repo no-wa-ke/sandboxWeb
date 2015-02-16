@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 Video with alpha transparency</title>
+    <style>
+    body {
+        font-family: arial, sans-serif;
+    }
+
+    #output {
+    	top:0;
+		position:absolute;
+        width: 100%;
+        height: auto;
+    }
+    .controls{
+    	bottom:1%;
+    	position: absolute;
+    }
+    #buffer {
+        display: none;
+    }
+    p {
+        background: white;
+    }
+    .centerItem {
+    	width:100%;
+        height: auto;
+        top:40%;
+        position: absolute;
+    }
+    .centerItem p {
+    	font-size: 40px;
+        margin: 0;
+        background: yellow;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="centerItem">
+            <p>HTML5 Video with alpha transparency
+                <p>
+        </div>
+        <video id="video" style="display:none;	" autoplay>
+            <source src="media/compressed.mp4" type='video/mp4;' />
+            <!-- 	<source src="compressed.ogv" type='video/ogg; codecs="theora, vorbis"' /> -->
+        </video>
+        <canvas width="480" height="488" id="buffer"></canvas>
+        <canvas width="480" height="244" id="output"></canvas>
+  
+    	<div class ="controls">
+    <p>
+        <a href="#" id="randomBg">Random background colour</a> - <a href="#" id="stop">Stop</a> - <a href="#" id="start">Start</a> - <a href="#" id="toggleProcessing">Toggle Processing</a>
+    </p>
+
+    </div>
+      </div>
+    <script>
+    (function() {
+        var outputCanvas = document.getElementById('output'),
+            output = outputCanvas.getContext('2d'),
+            bufferCanvas = document.getElementById('buffer'),
+            buffer = bufferCanvas.getContext('2d'),
+            video = document.getElementById('video'),
+            width = outputCanvas.width,
+            height = outputCanvas.height,
+            interval;
+
+        function processFrame() {
+            buffer.drawImage(video, 0, 0);
+
+            // this can be done without alphaData, except in Firefox which doesn't like it when image is bigger than the canvas
+            var image = buffer.getImageData(0, 0, width, height),
+                imageData = image.data,
+                alphaData = buffer.getImageData(0, height, width, height).data;
+
+            for (var i = 3, len = imageData.length; i < len; i = i + 4) { //アルファをつける
+                imageData[i] = alphaData[i - 1]; //よくわかんないけどこれでOK
+            }
+
+            output.putImageData(image, 0, 0, 0, 0, width, height);
+        }
+
+        function randomColourVal() {
+            return Math.floor(Math.random() * 256);
+        }
+
+        video.addEventListener('play', function() {
+            clearInterval(interval);
+            interval = setInterval(processFrame, 40)
+        }, false);
+
+        // Firefox doesn't support looping video, so we emulate it this way
+        video.addEventListener('ended', function() {
+            video.play();
+        }, false);
+
+        document.getElementById('randomBg').addEventListener('click', function(event) {
+            document.body.style.backgroundColor = 'rgb(' + randomColourVal() + ',' + randomColourVal() + ',' + randomColourVal() + ')';
+            event.preventDefault();
+        }, false);
+
+        document.getElementById('start').addEventListener('click', function(event) {
+            video.play();
+            event.preventDefault();
+        }, false);
+
+        document.getElementById('stop').addEventListener('click', function(event) {
+            video.pause();
+            clearInterval(interval);
+            event.preventDefault();
+        }, false);
+
+        document.getElementById('toggleProcessing').addEventListener('click', function(event) {
+            var toShow = video,
+                toHide = outputCanvas;
+
+            if (video.style.display == 'block') {
+                toShow = outputCanvas;
+                toHide = video;
+            }
+
+            toShow.style.display = 'block';
+            toHide.style.display = 'none';
+
+            event.preventDefault();
+        }, false);
+
+
+    })();
+    </script>
+    <script>
+    </script>
+</body>
+
+</html>

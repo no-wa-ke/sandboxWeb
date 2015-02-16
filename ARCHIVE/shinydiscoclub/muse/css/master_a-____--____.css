@@ -1,0 +1,52 @@
+#u1244
+{
+	position: relative;
+}
+
+.ie #u1244
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+
+#u1238
+{
+	border-color: #000000;
+	background-color: #920227;
+	position: relative;
+}
+
+#u1251-4
+{
+	position: fixed;
+}
+
+#u1251-4_img
+{
+	display: block;
+	vertical-align: top;
+}
+
+#u1262-4,#u1242-4,#u1237-4,#u1239-4,#u1247-4,#u1255-4,#u1236-4,#u1263-4,#u1241-4,#u1252-4,#u1248-4,#u1259-4,#u1243-4,#u1240-4
+{
+	text-align: center;
+	line-height: 1.75;
+	color: #DC8325;
+	font-size: 18px;
+	font-family: quicksand, sans-serif;
+	font-weight: 300;
+	position: relative;
+}
+
+#u1249,#u1260,#u1253,#u1245
+{
+	position: relative;
+}
+
+#u1249_clip,#u1260_clip,#u1253_clip,#u1245_clip
+{
+	overflow: hidden;
+}
+

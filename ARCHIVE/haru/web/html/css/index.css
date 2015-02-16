@@ -1,0 +1,191 @@
+html
+{
+	background-size: cover !important;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-khtml-background-size: cover;
+	-ms-background-size: cover;
+	background: #7F7F7F url("../rotator/rotator.php") no-repeat left top fixed;
+}
+
+#page
+{
+	z-index: 1;
+	width: 0px;
+	min-height: 0px;
+	padding-right: 960px;
+	padding-bottom: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u740
+{
+	z-index: 2;
+	width: 299px;
+	top: 56px;
+	left: 0px;
+}
+
+#u2117-4
+{
+	z-index: 22;
+	width: 51px;
+	top: 168px;
+	left: 65px;
+}
+
+#u2117-4:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 0px;
+	margin: 0px;
+}
+
+#u2112
+{
+	z-index: 8;
+	width: 60px;
+	height: 27px;
+	top: 172px;
+	left: 63px;
+}
+
+#u2108
+{
+	z-index: 4;
+	width: 69px;
+	height: 252px;
+	top: 184px;
+	left: 68px;
+}
+
+#u2114-4
+{
+	z-index: 10;
+	width: 51px;
+	top: 214px;
+	left: 65px;
+}
+
+#u2117-4.MuseLinkActive,#u2114-4:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 0px;
+	margin: 0px;
+}
+
+#u2109
+{
+	z-index: 5;
+	width: 60px;
+	height: 27px;
+	top: 219px;
+	left: 63px;
+}
+
+#u2115-4
+{
+	z-index: 14;
+	width: 51px;
+	top: 265px;
+	left: 65px;
+}
+
+#u2114-4.MuseLinkActive,#u2115-4:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 0px;
+	margin: 0px;
+}
+
+#u2110
+{
+	z-index: 6;
+	width: 60px;
+	height: 27px;
+	top: 269px;
+	left: 63px;
+}
+
+#u2116-4
+{
+	z-index: 18;
+	width: 51px;
+	top: 315px;
+	left: 64px;
+}
+
+#u2115-4.MuseLinkActive,#u2116-4:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 0px;
+	margin: 0px;
+}
+
+#u2111
+{
+	z-index: 7;
+	width: 60px;
+	height: 27px;
+	top: 319px;
+	left: 63px;
+}
+
+#u2118-4
+{
+	z-index: 26;
+	width: 68px;
+	top: 364px;
+	left: 64px;
+}
+
+#u2116-4.MuseLinkActive,#u2118-4:hover
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 0px;
+	margin: 0px;
+}
+
+#u2118-4.MuseLinkActive
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 0px;
+	margin: 0px;
+}
+
+#u2113
+{
+	z-index: 9;
+	width: 60px;
+	height: 27px;
+	top: 368px;
+	left: 63px;
+}
+
+#u2112.MuseLinkActive,#u2110.MuseLinkActive,#u2111.MuseLinkActive,#u2113.MuseLinkActive
+{
+	margin: 0px;
+}
+
+#u107-4
+{
+	z-index: 30;
+	width: 278px;
+	min-height: 27px;
+	bottom: 28px;
+	left: 55px;
+}
+
+body
+{
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+

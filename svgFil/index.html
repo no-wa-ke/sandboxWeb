@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://www.svgjs.com/filter/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>svg.filter.js - A plugin for svg.js adding filter functionality</title>
+    <meta name="author" content="Wout Fierens">
+    <meta name="description" content="A plugin for svg.js adding filter functionality.">
+    <meta content="width=950" name="viewport">
+
+    <link href="./index_files/css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="http://www.svgjs.com/images/favicon.png" type="image/png">
+
+    <style type="text/css">
+      h1, h2 { font-family: 'Source Sans Pro'; font-size: 22px; text-align: center; }
+      h2 { font-size: 20px; margin: 20px 0; text-align: left; }
+      section, footer, ul { font-family: 'Helvetica Neue'; font-weight: 300; line-height: 1.5em; width: 990px; margin: 0 auto; text-align: center; }
+      #canvas { max-width: 990px; margin: 0 auto; }
+      footer { font-size: 12px; padding-top: 10px; }
+    </style>
+  <style type="text/css"></style><script type="text/javascript" src="./index_files/saved_resource"></script></head>
+  
+  <body>
+
+    <h1>a plugin for svg.js adding filter functionality</h1>
+
+    <div id="canvas"><svg id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" width="990" height="1650" xmlns:xlink="http://www.w3.org/1999/xlink"><image id="SvgjsImage1007" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="15" y="15" opacity="0"></image><image id="SvgjsImage1008" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="15" x="15" clip-path="url(&quot;#SvgjsClipPath1016&quot;)"></image><text id="SvgjsText1009" font-family="Helvetica Neue, Helvetica, sans-serif" x="165" y="258.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1011)"><tspan id="SvgjsTspan1010" dy="31.200000000000003" x="165">original</tspan></text><image id="SvgjsImage1017" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="345" y="15" opacity="0"></image><image id="SvgjsImage1018" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="15" x="345" clip-path="url(&quot;#SvgjsClipPath1026&quot;)" filter="url(#SvgjsFilter1027)" opacity="1"></image><text id="SvgjsText1019" font-family="Helvetica Neue, Helvetica, sans-serif" x="495" y="258.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1021)"><tspan id="SvgjsTspan1020" dy="31.200000000000003" x="495">gaussian blur</tspan></text><image id="SvgjsImage1029" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="675" y="15" opacity="0"></image><image id="SvgjsImage1030" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="15" x="675" clip-path="url(&quot;#SvgjsClipPath1038&quot;)" filter="url(#SvgjsFilter1039)"></image><text id="SvgjsText1031" font-family="Helvetica Neue, Helvetica, sans-serif" x="825" y="258.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1033)"><tspan id="SvgjsTspan1032" dy="31.200000000000003" x="825">horizontal blur</tspan></text><image id="SvgjsImage1041" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="15" y="345" opacity="0"></image><image id="SvgjsImage1042" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="345" x="15" clip-path="url(&quot;#SvgjsClipPath1050&quot;)" filter="url(#SvgjsFilter1051)" opacity="1"></image><text id="SvgjsText1043" font-family="Helvetica Neue, Helvetica, sans-serif" x="165" y="588.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1045)"><tspan id="SvgjsTspan1044" dy="31.200000000000003" x="165">desaturate</tspan></text><image id="SvgjsImage1053" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="345" y="345" opacity="0"></image><image id="SvgjsImage1054" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="345" x="345" clip-path="url(&quot;#SvgjsClipPath1062&quot;)" filter="url(#SvgjsFilter1063)" opacity="1"></image><text id="SvgjsText1055" font-family="Helvetica Neue, Helvetica, sans-serif" x="495" y="588.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1057)"><tspan id="SvgjsTspan1056" dy="31.200000000000003" x="495">contrast</tspan></text><image id="SvgjsImage1069" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="675" y="345" opacity="0"></image><image id="SvgjsImage1070" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="345" x="675" clip-path="url(&quot;#SvgjsClipPath1078&quot;)" filter="url(#SvgjsFilter1079)" opacity="1"></image><text id="SvgjsText1071" font-family="Helvetica Neue, Helvetica, sans-serif" x="825" y="588.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1073)"><tspan id="SvgjsTspan1072" dy="31.200000000000003" x="825">sepiatone</tspan></text><image id="SvgjsImage1081" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="15" y="675" opacity="0"></image><image id="SvgjsImage1082" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="675" x="15" clip-path="url(&quot;#SvgjsClipPath1090&quot;)" filter="url(#SvgjsFilter1091)"></image><text id="SvgjsText1083" font-family="Helvetica Neue, Helvetica, sans-serif" x="165" y="918.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1085)"><tspan id="SvgjsTspan1084" dy="31.200000000000003" x="165">hue rotate 180</tspan></text><image id="SvgjsImage1093" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="345" y="675" opacity="1"></image><image id="SvgjsImage1094" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="675" x="345" clip-path="url(&quot;#SvgjsClipPath1102&quot;)" filter="url(#SvgjsFilter1103)" opacity="0"></image><text id="SvgjsText1095" font-family="Helvetica Neue, Helvetica, sans-serif" x="495" y="918.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1097)"><tspan id="SvgjsTspan1096" dy="31.200000000000003" x="495">luminance to alpha</tspan></text><image id="SvgjsImage1105" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="675" y="675" opacity="0"></image><image id="SvgjsImage1106" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="675" x="675" clip-path="url(&quot;#SvgjsClipPath1114&quot;)" filter="url(#SvgjsFilter1115)"></image><text id="SvgjsText1107" font-family="Helvetica Neue, Helvetica, sans-serif" x="825" y="918.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1109)"><tspan id="SvgjsTspan1108" dy="31.200000000000003" x="825">colorize</tspan></text><image id="SvgjsImage1117" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="15" y="1005" opacity="0"></image><image id="SvgjsImage1118" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="1005" x="15" clip-path="url(&quot;#SvgjsClipPath1126&quot;)" filter="url(#SvgjsFilter1127)"></image><text id="SvgjsText1119" font-family="Helvetica Neue, Helvetica, sans-serif" x="165" y="1248.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1121)"><tspan id="SvgjsTspan1120" dy="31.200000000000003" x="165">posterize</tspan></text><image id="SvgjsImage1133" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="345" y="1005" opacity="0"></image><image id="SvgjsImage1134" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="1005" x="345" clip-path="url(&quot;#SvgjsClipPath1142&quot;)" filter="url(#SvgjsFilter1143)"></image><text id="SvgjsText1135" font-family="Helvetica Neue, Helvetica, sans-serif" x="495" y="1248.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1137)"><tspan id="SvgjsTspan1136" dy="31.200000000000003" x="495">darken</tspan></text><image id="SvgjsImage1149" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="675" y="1005" opacity="0"></image><image id="SvgjsImage1150" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="1005" x="675" clip-path="url(&quot;#SvgjsClipPath1158&quot;)" filter="url(#SvgjsFilter1159)" opacity="1"></image><text id="SvgjsText1151" font-family="Helvetica Neue, Helvetica, sans-serif" x="825" y="1248.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1153)"><tspan id="SvgjsTspan1152" dy="31.200000000000003" x="825">lighten</tspan></text><image id="SvgjsImage1165" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="15" y="1335" opacity="0"></image><image id="SvgjsImage1166" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="1335" x="15" clip-path="url(&quot;#SvgjsClipPath1174&quot;)" filter="url(#SvgjsFilter1175)"></image><text id="SvgjsText1167" font-family="Helvetica Neue, Helvetica, sans-serif" x="165" y="1578.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1169)"><tspan id="SvgjsTspan1168" dy="31.200000000000003" x="165">invert</tspan></text><image id="SvgjsImage1181" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="345" y="1335" opacity="0"></image><image id="SvgjsImage1182" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="1335" x="345" clip-path="url(&quot;#SvgjsClipPath1190&quot;)" filter="url(#SvgjsFilter1191)" opacity="1"></image><text id="SvgjsText1183" font-family="Helvetica Neue, Helvetica, sans-serif" x="495" y="1578.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1185)"><tspan id="SvgjsTspan1184" dy="31.200000000000003" x="495">gamma correct 1</tspan></text><image id="SvgjsImage1197" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" x="675" y="1335" opacity="0"></image><image id="SvgjsImage1198" href="http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg" width="300" height="300" y="1335" x="675" clip-path="url(&quot;#SvgjsClipPath1206&quot;)" filter="url(#SvgjsFilter1207)" opacity="1"></image><text id="SvgjsText1199" font-family="Helvetica Neue, Helvetica, sans-serif" x="825" y="1578.53125" font-size="24" text-anchor="middle" font-weight="100" fill="#ffffff" filter="url(#SvgjsFilter1201)"><tspan id="SvgjsTspan1200" dy="31.200000000000003" x="825">gamma correct 2</tspan></text><defs id="SvgjsDefs1001"><rect id="SvgjsRect1006" width="300" height="300"></rect><filter id="SvgjsFilter1011"><feoffset id="SvgjsFeOffset1012" in="SourceAlpha" result="SvgjsFeOffset1012Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1013" in="SvgjsFeOffset1012Out" result="SvgjsFeGaussianBlur1013Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1014" in="SourceGraphic" result="SvgjsFeBlend1014Out" in2="SvgjsFeGaussianBlur1013Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1016"><use id="SvgjsUse1015" href="#SvgjsRect1006" x="15" y="15"></use></clippath><filter id="SvgjsFilter1021"><feoffset id="SvgjsFeOffset1022" in="SourceAlpha" result="SvgjsFeOffset1022Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1023" in="SvgjsFeOffset1022Out" result="SvgjsFeGaussianBlur1023Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1024" in="SourceGraphic" result="SvgjsFeBlend1024Out" in2="SvgjsFeGaussianBlur1023Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1026"><use id="SvgjsUse1025" href="#SvgjsRect1006" x="345" y="15"></use></clippath><filter id="SvgjsFilter1027"><fegaussianblur id="SvgjsFeGaussianBlur1028" in="SourceGraphic" result="SvgjsFeGaussianBlur1028Out" stdDeviation="30"></fegaussianblur></filter><filter id="SvgjsFilter1033"><feoffset id="SvgjsFeOffset1034" in="SourceAlpha" result="SvgjsFeOffset1034Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1035" in="SvgjsFeOffset1034Out" result="SvgjsFeGaussianBlur1035Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1036" in="SourceGraphic" result="SvgjsFeBlend1036Out" in2="SvgjsFeGaussianBlur1035Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1038"><use id="SvgjsUse1037" href="#SvgjsRect1006" x="675" y="15"></use></clippath><filter id="SvgjsFilter1039"><fegaussianblur id="SvgjsFeGaussianBlur1040" in="SourceGraphic" result="SvgjsFeGaussianBlur1040Out" stdDeviation="30 0"></fegaussianblur></filter><filter id="SvgjsFilter1045"><feoffset id="SvgjsFeOffset1046" in="SourceAlpha" result="SvgjsFeOffset1046Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1047" in="SvgjsFeOffset1046Out" result="SvgjsFeGaussianBlur1047Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1048" in="SourceGraphic" result="SvgjsFeBlend1048Out" in2="SvgjsFeGaussianBlur1047Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1050"><use id="SvgjsUse1049" href="#SvgjsRect1006" x="15" y="345"></use></clippath><filter id="SvgjsFilter1051"><fecolormatrix id="SvgjsFeColorMatrix1052" in="SourceGraphic" result="SvgjsFeColorMatrix1052Out" type="saturate" values="0"></fecolormatrix></filter><filter id="SvgjsFilter1057"><feoffset id="SvgjsFeOffset1058" in="SourceAlpha" result="SvgjsFeOffset1058Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1059" in="SvgjsFeOffset1058Out" result="SvgjsFeGaussianBlur1059Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1060" in="SourceGraphic" result="SvgjsFeBlend1060Out" in2="SvgjsFeGaussianBlur1059Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1062"><use id="SvgjsUse1061" href="#SvgjsRect1006" x="345" y="345"></use></clippath><filter id="SvgjsFilter1063"><fecomponenttransfer id="SvgjsFeComponentTransfer1064" in="SourceGraphic" result="SvgjsFeComponentTransfer1064Out"><fefuncr id="SvgjsFeFuncR1065" type="linear" slope="1.5" intercept="-0.14999999999999997"></fefuncr><fefuncg id="SvgjsFeFuncG1066" type="linear" slope="1.5" intercept="-0.14999999999999997"></fefuncg><fefuncb id="SvgjsFeFuncB1067" type="linear" slope="1.5" intercept="-0.14999999999999997"></fefuncb><fefunca id="SvgjsFeFuncA1068" type="identity"></fefunca></fecomponenttransfer></filter><filter id="SvgjsFilter1073"><feoffset id="SvgjsFeOffset1074" in="SourceAlpha" result="SvgjsFeOffset1074Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1075" in="SvgjsFeOffset1074Out" result="SvgjsFeGaussianBlur1075Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1076" in="SourceGraphic" result="SvgjsFeBlend1076Out" in2="SvgjsFeGaussianBlur1075Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1078"><use id="SvgjsUse1077" href="#SvgjsRect1006" x="675" y="345"></use></clippath><filter id="SvgjsFilter1079"><fecolormatrix id="SvgjsFeColorMatrix1080" in="SourceGraphic" result="SvgjsFeColorMatrix1080Out" type="matrix" values="0.343 0.669 0.119 0 0 0.249 0.626 0.13 0 0 0.172 0.334 0.111 0 0 0 0 0 1 0"></fecolormatrix></filter><filter id="SvgjsFilter1085"><feoffset id="SvgjsFeOffset1086" in="SourceAlpha" result="SvgjsFeOffset1086Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1087" in="SvgjsFeOffset1086Out" result="SvgjsFeGaussianBlur1087Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1088" in="SourceGraphic" result="SvgjsFeBlend1088Out" in2="SvgjsFeGaussianBlur1087Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1090"><use id="SvgjsUse1089" href="#SvgjsRect1006" x="15" y="675"></use></clippath><filter id="SvgjsFilter1091"><fecolormatrix id="SvgjsFeColorMatrix1092" in="SourceGraphic" result="SvgjsFeColorMatrix1092Out" type="hueRotate" values="180"></fecolormatrix></filter><filter id="SvgjsFilter1097"><feoffset id="SvgjsFeOffset1098" in="SourceAlpha" result="SvgjsFeOffset1098Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1099" in="SvgjsFeOffset1098Out" result="SvgjsFeGaussianBlur1099Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1100" in="SourceGraphic" result="SvgjsFeBlend1100Out" in2="SvgjsFeGaussianBlur1099Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1102"><use id="SvgjsUse1101" href="#SvgjsRect1006" x="345" y="675"></use></clippath><filter id="SvgjsFilter1103"><fecolormatrix id="SvgjsFeColorMatrix1104" in="SourceGraphic" result="SvgjsFeColorMatrix1104Out" type="luminanceToAlpha"></fecolormatrix></filter><filter id="SvgjsFilter1109"><feoffset id="SvgjsFeOffset1110" in="SourceAlpha" result="SvgjsFeOffset1110Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1111" in="SvgjsFeOffset1110Out" result="SvgjsFeGaussianBlur1111Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1112" in="SourceGraphic" result="SvgjsFeBlend1112Out" in2="SvgjsFeGaussianBlur1111Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1114"><use id="SvgjsUse1113" href="#SvgjsRect1006" x="675" y="675"></use></clippath><filter id="SvgjsFilter1115"><fecolormatrix id="SvgjsFeColorMatrix1116" in="SourceGraphic" result="SvgjsFeColorMatrix1116Out" type="matrix" values="1 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"></fecolormatrix></filter><filter id="SvgjsFilter1121"><feoffset id="SvgjsFeOffset1122" in="SourceAlpha" result="SvgjsFeOffset1122Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1123" in="SvgjsFeOffset1122Out" result="SvgjsFeGaussianBlur1123Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1124" in="SourceGraphic" result="SvgjsFeBlend1124Out" in2="SvgjsFeGaussianBlur1123Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1126"><use id="SvgjsUse1125" href="#SvgjsRect1006" x="15" y="1005"></use></clippath><filter id="SvgjsFilter1127"><fecomponenttransfer id="SvgjsFeComponentTransfer1128" in="SourceGraphic" result="SvgjsFeComponentTransfer1128Out"><fefuncr id="SvgjsFeFuncR1129" type="discrete" tableValues="0 0.2 0.4 0.6 0.8 1"></fefuncr><fefuncg id="SvgjsFeFuncG1130" type="discrete" tableValues="0 0.2 0.4 0.6 0.8 1"></fefuncg><fefuncb id="SvgjsFeFuncB1131" type="discrete" tableValues="0 0.2 0.4 0.6 0.8 1"></fefuncb><fefunca id="SvgjsFeFuncA1132" type="identity"></fefunca></fecomponenttransfer></filter><filter id="SvgjsFilter1137"><feoffset id="SvgjsFeOffset1138" in="SourceAlpha" result="SvgjsFeOffset1138Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1139" in="SvgjsFeOffset1138Out" result="SvgjsFeGaussianBlur1139Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1140" in="SourceGraphic" result="SvgjsFeBlend1140Out" in2="SvgjsFeGaussianBlur1139Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1142"><use id="SvgjsUse1141" href="#SvgjsRect1006" x="345" y="1005"></use></clippath><filter id="SvgjsFilter1143"><fecomponenttransfer id="SvgjsFeComponentTransfer1144" in="SourceGraphic" result="SvgjsFeComponentTransfer1144Out"><fefuncr id="SvgjsFeFuncR1145" type="linear" slope="0.2"></fefuncr><fefuncg id="SvgjsFeFuncG1146" type="linear" slope="0.2"></fefuncg><fefuncb id="SvgjsFeFuncB1147" type="linear" slope="0.2"></fefuncb><fefunca id="SvgjsFeFuncA1148" type="identity"></fefunca></fecomponenttransfer></filter><filter id="SvgjsFilter1153"><feoffset id="SvgjsFeOffset1154" in="SourceAlpha" result="SvgjsFeOffset1154Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1155" in="SvgjsFeOffset1154Out" result="SvgjsFeGaussianBlur1155Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1156" in="SourceGraphic" result="SvgjsFeBlend1156Out" in2="SvgjsFeGaussianBlur1155Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1158"><use id="SvgjsUse1157" href="#SvgjsRect1006" x="675" y="1005"></use></clippath><filter id="SvgjsFilter1159"><fecomponenttransfer id="SvgjsFeComponentTransfer1160" in="SourceGraphic" result="SvgjsFeComponentTransfer1160Out"><fefuncr id="SvgjsFeFuncR1161" type="linear" slope="1.5" intercept="0.2"></fefuncr><fefuncg id="SvgjsFeFuncG1162" type="linear" slope="1.5" intercept="0.2"></fefuncg><fefuncb id="SvgjsFeFuncB1163" type="linear" slope="1.5" intercept="0.2"></fefuncb><fefunca id="SvgjsFeFuncA1164" type="identity"></fefunca></fecomponenttransfer></filter><filter id="SvgjsFilter1169"><feoffset id="SvgjsFeOffset1170" in="SourceAlpha" result="SvgjsFeOffset1170Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1171" in="SvgjsFeOffset1170Out" result="SvgjsFeGaussianBlur1171Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1172" in="SourceGraphic" result="SvgjsFeBlend1172Out" in2="SvgjsFeGaussianBlur1171Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1174"><use id="SvgjsUse1173" href="#SvgjsRect1006" x="15" y="1335"></use></clippath><filter id="SvgjsFilter1175"><fecomponenttransfer id="SvgjsFeComponentTransfer1176" in="SourceGraphic" result="SvgjsFeComponentTransfer1176Out"><fefuncr id="SvgjsFeFuncR1177" type="table" tableValues="1 0"></fefuncr><fefuncg id="SvgjsFeFuncG1178" type="table" tableValues="1 0"></fefuncg><fefuncb id="SvgjsFeFuncB1179" type="table" tableValues="1 0"></fefuncb><fefunca id="SvgjsFeFuncA1180" type="identity"></fefunca></fecomponenttransfer></filter><filter id="SvgjsFilter1185"><feoffset id="SvgjsFeOffset1186" in="SourceAlpha" result="SvgjsFeOffset1186Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1187" in="SvgjsFeOffset1186Out" result="SvgjsFeGaussianBlur1187Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1188" in="SourceGraphic" result="SvgjsFeBlend1188Out" in2="SvgjsFeGaussianBlur1187Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1190"><use id="SvgjsUse1189" href="#SvgjsRect1006" x="345" y="1335"></use></clippath><filter id="SvgjsFilter1191"><fecomponenttransfer id="SvgjsFeComponentTransfer1192" in="SourceGraphic" result="SvgjsFeComponentTransfer1192Out"><fefuncr id="SvgjsFeFuncR1193" type="identity"></fefuncr><fefuncg id="SvgjsFeFuncG1194" type="gamma" amplitude="1" exponent="0.5"></fefuncg><fefuncb id="SvgjsFeFuncB1195" type="identity"></fefuncb><fefunca id="SvgjsFeFuncA1196" type="identity"></fefunca></fecomponenttransfer></filter><filter id="SvgjsFilter1201"><feoffset id="SvgjsFeOffset1202" in="SourceAlpha" result="SvgjsFeOffset1202Out" dx="0" dy="1"></feoffset><fegaussianblur id="SvgjsFeGaussianBlur1203" in="SvgjsFeOffset1202Out" result="SvgjsFeGaussianBlur1203Out" stdDeviation="1"></fegaussianblur><feblend id="SvgjsFeBlend1204" in="SourceGraphic" result="SvgjsFeBlend1204Out" in2="SvgjsFeGaussianBlur1203Out" mode="normal"></feblend></filter><clippath id="SvgjsClipPath1206"><use id="SvgjsUse1205" href="#SvgjsRect1006" x="675" y="1335"></use></clippath><filter id="SvgjsFilter1207"><fecomponenttransfer id="SvgjsFeComponentTransfer1208" in="SourceGraphic" result="SvgjsFeComponentTransfer1208Out"><fefuncr id="SvgjsFeFuncR1209" type="identity"></fefuncr><fefuncg id="SvgjsFeFuncG1210" type="gamma" amplitude="1" exponent="0.5" offset="-0.1"></fefuncg><fefuncb id="SvgjsFeFuncB1211" type="identity"></fefuncb><fefunca id="SvgjsFeFuncA1212" type="identity"></fefunca></fecomponenttransfer></filter></defs></svg></div>
+
+    <footer>
+      © 2013-2014 Wout Fierens - svg.filter.js is released under the terms of the MIT license.
+    </footer>
+
+    <a href="https://github.com/wout/svg.filter.js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="./index_files/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    
+    <script src="./index_files/svg.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./index_files/svg.filter.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+      var draw, rect
+        , src = 'http://distilleryimage11.ak.instagram.com/89ac2e90d9b111e297bf22000a1f9263_7.jpg'
+
+      // canvas
+      draw = SVG('canvas').size(990, 1650)
+
+      // nase elements../
+      rect  = draw.defs().rect(300,300)
+
+      // original
+      drawImage(15, 15, 'original')
+
+      // blur
+      drawImage(345, 15, 'gaussian blur').filter(function(add) {
+        add.gaussianBlur('30')
+      })
+
+      // horizontal blur
+      drawImage(675, 15, 'horizontal blur').filter(function(add) {
+        add.gaussianBlur('30 0')
+      })
+
+
+      // desaturate
+      drawImage(15, 345, 'desaturate').filter(function(add) {
+        add.colorMatrix('saturate', 0)
+      })
+
+      // contrast
+      drawImage(345, 345, 'contrast').filter(function(add) {
+        var amount = 1.5
+
+        add.componentTransfer({
+          rgb: { type: 'linear', slope: amount, intercept: -(0.3 * amount) + 0.3 }
+        })
+      })
+
+      // sepiatone
+      drawImage(675, 345, 'sepiatone').filter(function(add) {
+        add.colorMatrix('matrix', [ .343, .669, .119, 0, 0 
+                                  , .249, .626, .130, 0, 0
+                                  , .172, .334, .111, 0, 0
+                                  , .000, .000, .000, 1, 0 ])
+      })
+
+      // hue rotate
+      drawImage(15, 675, 'hue rotate 180').filter(function(add) {
+        add.colorMatrix('hueRotate', 180)
+      })
+
+      // alpha
+      drawImage(345, 675, 'luminance to alpha').filter(function(add) {
+        add.colorMatrix('luminanceToAlpha')
+      })
+
+      // colorize
+      drawImage(675, 675, 'colorize').filter(function(add) {
+        add.colorMatrix('matrix', [ 1.0, 0,   0,   0,   0
+                                  , 0,   0.2, 0,   0,   0 
+                                  , 0,   0,   0.2, 0,   0 
+                                  , 0,   0,   0,   1.0, 0 ])
+      })
+
+      // posterize
+      drawImage(15, 1005, 'posterize').filter(function(add) {
+        add.componentTransfer({
+          rgb: { type: 'discrete', tableValues: '0 0.2 0.4 0.6 0.8 1' }
+        })
+      })
+
+      // darken
+      drawImage(345, 1005, 'darken').filter(function(add) {
+        add.componentTransfer({
+          rgb: { type: 'linear', slope: 0.2 }
+        })
+      })
+
+      // lighten
+      drawImage(675, 1005, 'lighten').filter(function(add) {
+        add.componentTransfer({
+          rgb: { type: 'linear', slope: 1.5, intercept: 0.2 }
+        })
+      })
+
+
+      // invert
+      drawImage(15, 1335, 'invert').filter(function(add) {
+        add.componentTransfer({
+          rgb: { type: 'table', tableValues: '1 0' }
+        })
+      })
+
+      // gamma correct
+      drawImage(345, 1335, 'gamma correct 1').filter(function(add) {
+        add.componentTransfer({
+          g: { type: 'gamma', amplitude: 1, exponent: 0.5 }
+        })
+      })
+
+      // gamma correct
+      drawImage(675, 1335, 'gamma correct 2').filter(function(add) {
+        add.componentTransfer({
+          g: { type: 'gamma', amplitude: 1, exponent: 0.5, offset: -0.1 }
+        })
+      })
+
+
+      // helpers
+      function drawImage(x, y, effect) {
+        var text
+          , original = draw.image(src).size(300, 300).move(x, y)
+          , filtered = original.clone()
+
+        /* hide original */
+        original.opacity(0)
+
+        /* description */
+        text = draw.text(effect)
+          .move(x + 150, y + 250)
+          .font({ size: 24, anchor: 'middle', family: 'Helvetica Neue, Helvetica, sans-serif', weight: 100 })
+          .fill('#fff')
+
+        /* add drop shadow to description */
+        text.filter(function(add) {
+          var blur = add.offset(0,1).in(add.sourceAlpha).gaussianBlur('1')
+
+          add.blend(add.source, blur)
+        })
+
+        /* mouse events */
+        filtered.mouseover(function() {
+          filtered.animate(300).opacity(0)
+          original.animate(100).opacity(1)
+        })
+
+        filtered.mouseout(function() {
+          filtered.animate(100).opacity(1)
+          original.animate(300).opacity(0)
+        })
+
+        return filtered.clipWith(draw.use(rect).move(x, y))
+      }
+      
+    </script><svg id="SvgjsSvg1002" xmlns="http://www.w3.org/2000/svg" version="1.1" width="2" height="0" xmlns:xlink="http://www.w3.org/1999/xlink" style="opacity: 0; position: fixed; left: 100%; top: 100%; overflow: hidden;"><polyline id="SvgjsPolyline1005" points="0,0"></polyline><path id="SvgjsPath1004"></path><defs id="SvgjsDefs1003"></defs></svg>
+
+    <script src="./index_files/saved_resource(1)" type="text/javascript"></script>
+    
+  
+  
+</body></html>

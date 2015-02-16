@@ -1,0 +1,1 @@
+$('#content').append('<p>Increase or decrease the height of the browser to see the footer stay on the bottom</p>');

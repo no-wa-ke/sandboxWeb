@@ -1,0 +1,64 @@
+@-ms-viewport
+{
+	width: 380px;
+}
+
+@-webkit-viewport
+{
+	width: 380px;
+}
+
+@-o-viewport
+{
+	width: 380px;
+}
+
+@-moz-viewport
+{
+	width: 380px;
+}
+
+@viewport
+{
+	width: 380px;
+}
+
+.html
+{
+	background: #FFFFFF url("../../images/ballet.jpg") no-repeat center top fixed;
+	background-size: cover !important;
+}
+
+#page
+{
+	z-index: 1;
+	width: 334px;
+	min-height: 335.65px;
+	padding-top: 28px;
+	padding-right: 46px;
+	padding-bottom: 206.35000000000002px;
+}
+
+#u2247-4
+{
+	z-index: 2;
+	width: 260px;
+}
+
+#u2478-9
+{
+	z-index: 6;
+	width: 289px;
+	min-height: 208px;
+	background-color: #FFFF32;
+	background-color: rgba(255, 255, 0, 0.8);
+	line-height: 1.75;
+	font-size: 18px;
+	font-family: ヒラギノ明朝 Pro W3, Hiragino Mincho Pro, ＭＳ Ｐ明朝, MS PMincho, serif;
+	font-weight: bold;
+	margin-left: 45px;
+	margin-top: 103px;
+	position: relative;
+	-pie-background: rgba(255, 255, 0, 0.8);
+}
+

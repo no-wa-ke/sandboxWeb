@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex layouts demo with freewall</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="description" content="Freewall demo for flex layout" />
+    <meta name="keywords" content="javascript, dynamic, grid, layout, jquery plugin, flex layouts" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/tooltips.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script type="text/javascript" src="../freewall.js"></script>
+    <style type="text/css">
+    .free-wall {
+        margin: 15px;
+    }
+    .filter-items {
+        padding: 10px 0px;
+    }
+    .filter-label {
+        display: inline-block;
+        margin: 0px 5px 5px 0px;
+        padding: 10px;
+        cursor: pointer;
+        background: rgb(205, 149, 12);
+    }
+    .filter-label.active, .filter-label:hover {
+        background: rgb(238, 180, 34);
+    }
+
+    </style>
+</head>
+
+<body>
+    <!--FILTER-->
+    <div class="filter-items">
+        <div class="filter-label active" data-filter=".personal">Personal</div>
+        <div class="filter-label" data-filter=".commisioned">Comissioned</div>
+        <div class="filter-label">All</div>
+    </div>
+
+    <!--FREEWALL-->
+
+    <div id="freewall" class="free-wall"></div>
+    <script type="text/javascript"src="js/works.js"></script>
+
+</body>
+
+
+
+
+</html>

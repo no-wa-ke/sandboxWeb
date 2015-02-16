@@ -1,0 +1,22 @@
+<manifest alg="2" build="704" opt="true" iceEnabled="true">
+  <folder name="css">
+    <file name="site_global.css" crc="3837790900"/>
+    <file name="index.css" crc="96250769" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="3828297711" ref="index"/>
+    <file name="museutils.js" crc="4210811981" ref="index"/>
+    <file name="webpro.js" crc="4369767" ref="index"/>
+    <file name="form_check.php" crc="368723870" ref="index"/>
+    <file name="form_throttle.php" crc="4280792853" ref="index"/>
+    <file name="form-u109.php" crc="293666384" ref="index"/>
+    <file name="jquery.watch.js" crc="4199601726" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="u163-17.png" crc="92566042" ref="index"/>
+    <file name="u163-17-r.png" crc="310672932" ref="index"/>
+    <file name="u163-17-m.png" crc="3872003885" ref="index"/>
+    <file name="u163-17-fs.png" crc="4019246679" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4201114556" mt="1371566782620"/>
+</manifest>

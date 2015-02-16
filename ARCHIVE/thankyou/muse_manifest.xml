@@ -1,0 +1,19 @@
+<manifest alg="2" build="6" opt="true">
+  <folder name="css">
+    <file name="site_global.css" crc="4003109849"/>
+    <file name="index.css" crc="4274269972" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <folder name="1.1">
+      <file name="jquery-1.7.min.js" crc="4285342938" ref="index"/>
+      <file name="museutils.js" crc="110351884" ref="index"/>
+      <file name="pie.js" crc="3786417276" ref="index"/>
+      <file name="pie.htc" crc="354638364" ref="index"/>
+      <file name="jquery.musepolyfill.bgsize.js" crc="311580693" ref="index"/>
+    </folder>
+  </folder>
+  <folder name="images">
+    <file name="jpeg_logo.gif" crc="19994657" ref="index"/>
+  </folder>
+  <file name="index.html" crc="3902254898" mt="1349421580762"/>
+</manifest>

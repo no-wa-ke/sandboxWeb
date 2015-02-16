@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+
+<style type="text/css">
+<body style="overflow:hidden"> 
+
+#img-container { width: 7921px; }
+#img-container .text { float: left; width: 35px; }
+#img-container .text p, #img-container .textor p { width: 0px; }
+#img-container .text2 p { width: auto; }
+#site-box { width : 30000px ; }
+#wrapper { width:9500px;}
+#wrapper { margin: 20px 30px 20px 200px; border-style: none;  } <!--this decides the content margins-->
+
+#topMenu {
+  width:800px;
+  height:200px;
+}
+
+img    {vertical-align:top;}
+</style>   
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+<script type="text/javascript" src="http://harunakworks.tumblr.com/api/read/json?num=13&type=photo"></script>
+<script type="text/javascript">
+						
+shutokusu = 13;
+
+for (i = 0; i < shutokusu; i++) {
+label = tumblr_api_read["posts"][i]["photo-url-400"] 
+
+
+
+
+url = tumblr_api_read["posts"][i]["url"];
+
+document.write('<a href="', url, '" target="_blank"><img src="',label,'"hspace="60"></a>');
+}
+
+
+</script>
+
+</div>
+
+</body>
+</html>

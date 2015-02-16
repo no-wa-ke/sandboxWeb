@@ -1,0 +1,84 @@
+@-ms-viewport
+{
+	width: 380px;
+}
+
+@-webkit-viewport
+{
+	width: 380px;
+}
+
+@-o-viewport
+{
+	width: 380px;
+}
+
+@-moz-viewport
+{
+	width: 380px;
+}
+
+@viewport
+{
+	width: 380px;
+}
+
+html
+{
+	background-color: #7F7F7F;
+}
+
+#page
+{
+	z-index: 1;
+	width: 301px;
+	min-height: 234px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	padding: 146px 40px 190px 39px;
+}
+
+#u1151
+{
+	z-index: 2;
+	width: 301px;
+	min-height: 90px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u1153-4
+{
+	z-index: 3;
+	width: 301px;
+	min-height: 17px;
+	line-height: 1.75;
+	color: #063A95;
+	font-family: quicksand, sans-serif;
+	font-weight: 300;
+	margin-top: 30px;
+	position: relative;
+}
+
+#u1154-4
+{
+	z-index: 7;
+	width: 58px;
+	min-height: 4px;
+	line-height: 1.75;
+	color: #A4B1E7;
+	font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, ＭＳ Ｐゴシック, MS PGothic, sans-serif;
+	margin-left: 243px;
+	margin-top: 15px;
+	position: relative;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

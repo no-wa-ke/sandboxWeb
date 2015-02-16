@@ -1,0 +1,233 @@
+<h1>Pulling Vine Videos through Twitter's API with PHP & jQuery</h1>
+<p>Most developers have been awaiting the release of Vine's official API. Unfortunately this has yet to be announced. However I've been curious to figure out a workaround to this little problem. <a href="https://vine.co/">Vine.co</a> is a social networking startup much like Instagram, but dedicated to sharing quick videos. People often repost these Vine videos onto Twitter coupled with hashtags.</p>
+
+<p>In this tutorial I want to explain how to build a Vine instant search webapp using jQuery and PHP. We'll be accessing live public tweets and scanning them for Vine.co video links. It's a complicated tutorial but the most difficult tasks always have something worth teaching. You can see my instant search in action from the demo link below.</p>
+
+<p><a href="demo/index.html"><img src="images/vine-instant-search-api-preview.jpg" alt="vine instant search api tutorial preview" /></a></p>
+<p><strong><a href="demo/index.html">Live Demo</a></strong> - <strong><a href="vine-api-source-code.zip">Download Source Code</a></strong></p>
+
+<h3>Registering the Application</h3>
+<p>Twitter's new API v1.1 requires every API call to use some form of authentication - even for public tweets. I find this to be ridiculous and counter-intuitive, but you gotta work with what you've got. If you're new to registering applications please take a look at <a href="http://stackoverflow.com/a/15314662/477958">this Stack Overflow post</a>. The <a href="https://dev.twitter.com/docs/api/1.1/get/search/tweets">search request</a> only needs an API key/secret but it doesn't hurt to include a consumer key/secret as well. It's all free to signup from <a href="https://dev.twitter.com/">Twitter's developer center</a>.</p>
+
+<p>Don't be nervous if these words seem like nonsense at first! API development is a long process, and you'll gradually become familiar with such terms through repetition. The other thing we need is a generic Twitter API wrapper. I'm using <a href="https://github.com/J7mbo/twitter-api-php">this library on Github</a> which is 100% free to download.</p>
+
+<p>Once downloaded unzip the directory and locate <strong>TwitterAPIExchange.php</strong>. This will be needed for another PHP script so we can make direct calls to the Twitter API with much less code. For now my directory structure includes an <strong>index.html</strong> along with a subfolder named <strong>/lib/</strong>. Copy the API Exchange script into the lib folder(short for "libraries").</p>
+
+<h3>Building the Webpage</h3>
+<p>Setting up the application in Twitter is free and shouldn't take longer than 10-15 minutes. We'll come back to all the PHP stuff later, but for now I want to go over the page layout. The search form uses an ID <strong>#vineapi</strong> which is targeted using jQuery. Whenever the form is submitted we stop the initial request and run a custom Ajax request instead.</p>
+
+<pre>&lt;div id="w">
+  &lt;h1>Vine.co Instant Search&lt;/h1>
+  &lt;p class="center">Enter a #hashtag or keyword(s) to search for related videos.&lt;/p>
+  
+  &lt;form id="vineapi" name="vineapi" method="post" action="index.html">
+    &lt;input type="text" name="hashtag" id="hashtag" tabindex="1" placeholder="ex: #funny">
+    &lt;input type="submit" value="Search!" id="submitbtn" tabindex="2">
+  &lt;/form>
+
+  &lt;div id="loader">&lt;img src="css/loader.gif" alt="loading...">&lt;/div>
+  &lt;div id="videos" class="clearfix">&lt;/div>
+&lt;/div>&lt;!-- @end #w -->
+</pre>
+
+<p>This is the entirety of my page body found within <strong>index.html</strong>. Aside from the search form there's also a <strong>#loader</strong> div which is used during Ajax requests. The <strong>#videos</strong> container will hold all the internal videos as they get loaded by jQuery. Neither of these divs will show on first pageload, but they are very important to the general interface.</p>
+
+<pre>/** page layout **/
+#w {
+  display: block;
+  margin: 0 auto;
+  width: 940px;
+  background: #fff;
+  padding: 15px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+#loader {
+  display: none;
+  text-align: center;
+}
+
+#videos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.video {
+  display: block;
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+</pre>
+
+<p>These are the most important CSS styles related to content display. The <strong>#w</strong> container is fixed in the center at 940px. Similarly the <strong>#videos</strong> container fills a 100% width. But each internal <strong>.video</strong> container is fitted at 280px floating left. Individual Twitter API requests can return 15 max videos and this equates to five rows with 3 videos each.</p>
+
+<p>I'm also using some general resets based off <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer's codes</a>. The stylesheet isn't very interesting but you can peruse the file at your own leisure.</p>
+
+<h3>Creating PHP Scripts</h3>
+<p>The jQuery/Ajax request will access two separate PHP scripts in two distinct Ajax calls. The first is named <strong>api.php</strong> which makes the initial connection into Twitter. Let's delve into this code to see how it works.</p>
+
+<pre>require_once('TwitterAPIExchange.php');
+
+$settings = array(
+  'oauth_access_token' => "ACCESS_TOKEN_HERE",
+  'oauth_access_token_secret' => "ACCESS_TOKEN_SECRET_HERE",
+  'consumer_key' => "API_KEY_HERE",
+  'consumer_secret' => "API_SECRET_HERE"
+);
+
+$hashtag = $_GET['hashtag'];
+$url = 'https://api.twitter.com/1.1/search/tweets.json';
+$getfield = '?q='.urlencode($hashtag).'%20vine';
+$requestMethod = 'GET';
+
+$twitter = new TwitterAPIExchange($settings);
+
+echo $twitter->setGetfield($getfield)->buildOauth($url, $requestMethod)->performRequest();  
+</pre>
+
+<p>This first block will connect into the Twitter API using your application credentials. Next we need to keep in mind this PHP script will never be manually viewed, only pulled through jQuery. This means we can pass keyword(s) into the script using a <a href="http://www.php.net/manual/en/reserved.variables.get.php">$_GET variable</a>. I'll be taking the input field value and parsing with <a href="http://us1.php.net/manual/en/function.urlencode.php">urlencode()</a> to convert symbols for a nicer query. Also each search automatically includes the keyword "vine" so the results are more geared towards what we need.</p>
+
+<p>You don't need to know about the <strong>TwitterAPIExchange</strong> object but it is documented <a href="https://github.com/J7mbo/twitter-api-php">on the Github page</a> if you're curious to learn. Just understand this <strong>api.php</strong> file returns JSON results from a Twitter search directly into JavaScript. Then we parse through the results pulling out any tweets which include a Vine URL.</p>
+
+<h3>Scraping Video Thumbnails in PHP</h3>
+<p>Now the secondary PHP script is a lot more convoluted, especially because Vine has no official API methods. In order to pull video thumbnails we need to scrape the entire HTML page of each video and locate the Vine thumbnail URL. This is done using <a href="https://php.net/curl">cURL</a> which is a collection of PHP functions to scrape external content(HTML, XML, etc).</p>
+
+<p>The filename is <strong>curlinfo.php</strong> which also won't be accessed directly, but only through an Ajax request. From the previous script we have access to tweets with links to Vine video pages. Looping through each video we can pass the link into curlinfo.php and obtain the related video thumbnail.</p>
+
+<p>Please note this script uses more of a hack to obtain the thumbnails, so it will not work all of the time.</p>
+
+<pre>$vineurl = $_POST['vidurl'];
+
+function get_data($url) {
+	$ch = curl_init();
+	$timeout = 5;
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+	$data = curl_exec($ch);
+	curl_close($ch);
+	return $data;
+}
+
+$dataobj = get_data($vineurl);
+
+// parse HTML content
+$doc = new DOMDocument();
+@$doc->loadHTML($dataobj);
+</pre>
+
+<p>Instead of <strong>$_GET</strong> this script uses <strong>$_POST</strong> data which is very similar. Parsing the Vine URL into a custom function named <strong>get_data()</strong> will return full HTML contents of each page. Thankfully PHP has a class named <a href="http://www.php.net/manual/en/class.domdocument.php">DOMDocument</a> for accessing individual elements in the DOM. So I can pass the full HTML contents into a new object and search for each meta tag.</p>
+
+<p>You can see what we're looking for by going to any Vine.co video page and viewing the HTML source. Each page has a meta tag with the property <strong>twitter:image</strong> containing a thumbnail shot. This is exactly what we need to pull from the DOM and pass back into jQuery.</p>
+
+<pre>$list = $doc->getElementsByTagName('meta');
+
+foreach( $list as $item ) {
+  $prop = $item->getAttribute('property');
+
+  if($prop == 'twitter:image') {
+    die($item->getAttribute('content'));
+  }
+} 
+</pre>
+
+<p>The <strong>$list</strong> variable contains a large collection of meta tag DOM objects. I'm checking if the property attribute matches <strong>twitter:image</strong>, and if so then we kill the script and output the thumbnail URL directly to the page. Content output through PHP is returned to jQuery's Ajax method so we can work with these URLs in JavaScript.</p>
+
+<h3>Handling Ajax Requests</h3>
+<p>If you're still lost from the PHP code try not to be discouraged. As I mentioned this is definitely a hacker's solution to obtain Vine contents, and PHP can be confusing if you're unfamiliar with the language. All you need to understand is that <strong>api.php</strong> will return a JSON list of tweets. Using those tweets we can pull out Vine URLs to pass into <strong>curlinfo.php</strong> and then obtain each video's related thumbnail.</p>
+
+<p>But where does all this stuff happen? In the JavaScript! Actually I'm using the more advanced <a href="http://jquery.com/download/">jQuery library</a> to save time on Ajax requests. I'll break down each request so we can better understand how JS and PHP talk to each other.</p>
+
+<pre>$(function(){
+  var $loader = $('#loader');
+  var $videos = $('#videos');
+  
+  $('#vineapi').on('submit', function(e){
+    e.preventDefault();
+    
+    var keywords = $('#hashtag').val();
+    
+    $loader.show();
+    $videos.html('');
+</pre>
+
+<p>These first two variables are used many times throughout the script for targeting the loader div and the videos container. The primary event handler will trigger whenever a user submits the <strong>#vineapi</strong> form, either by clicking the submit button or hitting 'enter' on the keyboard. <a href="http://api.jquery.com/event.preventdefault/">e.preventDefault()</a> will stop the form submission and instead allows the use of custom JS code.</p>
+
+<p>The variable <strong>keywords</strong> will hold the current value of the input field. Whatever the user has typed into the search form will be stored in this variable. Afterwards the loading gif is displayed and we clear out any HTML still within the <strong>#videos</strong> container from a prior search. Then we dive into Ajax requests.</p>
+
+<pre>  $.ajax({
+    type: 'GET',
+    url: 'lib/api.php',
+    data: {'hashtag': keywords},
+    dataType: 'json',
+    success: function(data){
+      // on success loop through tweet data
+
+      
+      // output message if 0 tweets were found
+      if(data.statuses.length === 0) {
+        $loader.hide();
+        $videos.html('&lt;p>No results found.&lt;/p>');
+      }
+</pre>
+
+<p>The first Ajax method will connect into <strong>api.php</strong> with the search keyword(s). This also sets the GET datatype so PHP knows how to receive the variable. Whenever an Ajax request is successful we can run a new function with the return data. This can be named anything, but in my example it's passed into the function as <strong>data</strong> and stores the entire JSON response.</p>
+
+<p>It's important to first check if there's any tweets at all. If the result is empty then we're hiding the loader and displaying a message to the user. Otherwise we've successfully accessed the Twitter API and pulled a number of Tweets containing Vine videos. Now we have to loop through each one and pull the related video thumbnail.</p>
+
+<h3>Looping through Search Results</h3>
+<p>This large block is the final section of jQuery needed to display results. I think the JS code is a lot easier to understand compared with the PHP files - but I hope you can see how they're all related and build onto each other.</p>
+
+<pre>  $.each(data.statuses, function(i,itm) {
+    // if the tweet has more than 1 link we do some parsing
+    if(itm.entities.urls.length > 0) { 
+      var shorturl = itm.entities.urls[0].display_url.substring(0,7);
+      var videourl = itm.entities.urls[0].expanded_url;
+</pre>
+
+<p>The <strong>data</strong> variable contains a JSON object of Twitter statuses which we access through dot notation(<strong>data.statuses</strong>). The <a href="https://api.jquery.com/each/">$.each()</a> method is very similar to PHP's <a href="http://www.php.net/manual/en/control-structures.foreach.php">foreach()</a> loop where we can pass through multiple Tweets individually. To clarify, <strong>itm</strong> represents each individual <strong>data.statuses[i]</strong> where i increments with each new tweet. So to access the URLs of a single tweet we would need something like <strong>data.statuses[0].entities.urls</strong>.</p>
+
+<p><strong>itm.entities.urls[0]</strong> will return the very first URL in the list. If the tweet doesn't have any URLs then we completely skip over that tweet and move onto the next one. I'm checking if the URL does indeed point towards vine.co and if so then we need to check for a video thumbnail. Cue the secondary Ajax request to <strong>curlinfo.php</strong>.</p>
+
+<pre>            if(shorturl == 'vine.co') {
+              $.ajax({
+                type: 'POST',
+                url: 'lib/curlinfo.php',
+                data: {"vidurl": videourl},
+                dataType: 'html',
+                success: function(img){
+                  if($loader.is(":visible")) { $loader.hide(); }
+                  
+                  if(img == "") { img = "img/default.jpg" }
+                  
+                  var newhtml = '&lt;div class="video">&lt;a target="_blank" href="'+videourl+'">&lt;img src="'+img+'">&lt;/a>&lt;/div>';
+                  
+                  $videos.append(newhtml);
+                }
+              });
+            } // end logic for video URL        
+          }
+        }); // end each loop
+      }
+    }); // end primary ajax call
+  }); // end click event handler
+});
+</pre>
+
+<p>This time I'll pass the data through POST because URL symbols are tricky with colons and forward slashes. In this case I'm expect a return datatype of HTML instead of JSON, because we only expect 1 image link upon successful Ajax request. If successful the thumbnail URL gets passed via <strong>function(img)</strong>.</p>
+
+<p>I mentioned earlier that scraping the DOM will not always yield perfect results. In the case we get an empty image string I've created a default thumbnail <strong>img/default.jpg</strong>. Either way this success function creates the final HTML output for the individual video. It's contained inside a <strong>.video</strong> div with the thumbnail and a link out to the original Vine URL. jQuery's <a href="https://api.jquery.com/append/">.append()</a> method is perfect for adding each new video into the <strong>#videos</strong> container before looping over the next one.</p>
+
+<p>This loop of scraping the video page, pulling out a thumbnail and embedding into HTML will continue until we loop through every JSON object.</p>
+
+<p><a href="demo/index.html"><img src="images/vine-instant-search-api-preview.jpg" alt="vine instant search api tutorial preview" /></a></p>
+<p><strong><a href="demo/index.html">Live Demo</a></strong> - <strong><a href="vine-api-source-code.zip">Download Source Code</a></strong></p>
+
+<h3>Closing</h3>
+<p>Although I know this may not be useful everywhere, it should help developers understand exactly how useful APIs can be. Once Vine releases their own API this detailed process may not be necessary. But I certainly won't be holding my breath for that day!</p>
+
+<p>You're free to download my source code and rehost this on your own website or customize it to your liking. Just remember the live demo uses my own key/secret, so when downloading a copy you'll need to register your own key/secret for it to work properly. Also since this script requires PHP you'll need to run it on a local or remote web server.</p>

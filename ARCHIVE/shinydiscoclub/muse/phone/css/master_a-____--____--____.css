@@ -1,0 +1,43 @@
+#u1720
+{
+	border-color: #000000;
+	background-color: #C1272D;
+	position: relative;
+}
+
+#u1707-3
+{
+	text-align: left;
+	line-height: 1;
+	color: #DC8325;
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-family: quicksand, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	position: relative;
+}
+
+#u1692,#accordionu1694,#u1695,#u1696,#u1701,#u1697,#u1703,#u1705
+{
+	position: relative;
+}
+
+#u1692_img,#u1701_img,#u1697_img,#u1703_img,#u1705_img
+{
+	vertical-align: top;
+}
+
+#u1699
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+.AccordionPanelTab /* accordion */
+{
+	cursor: pointer;
+}
+

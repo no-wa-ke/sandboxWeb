@@ -1,0 +1,156 @@
+@import url('http://fonts.googleapis.com/css?family=Fredoka+One');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { overflow-y: scroll; }
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  padding: 25px 15px;
+  background: #e5ebe5;
+  color: #444;
+}
+
+br { display: block; line-height: 1.6em; } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+p {
+  font-size: 1.4em;
+  line-height: 1.25em;
+  margin-bottom: 6px;
+}
+
+.center { text-align: center; }
+
+h1 {
+  font-family: 'Fredoka One', 'Trebuchet MS', sans-serif;
+  font-size: 4.6em;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #63b07c;
+}
+
+
+
+/** page layout **/
+#w {
+  display: block;
+  margin: 0 auto;
+  width: 940px;
+  background: #fff;
+  padding: 15px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+#loader {
+  display: none;
+  text-align: center;
+}
+
+#videos {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.video {
+  display: block;
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+
+
+/** search form **/
+#vineapi {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+#hashtag {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 2px solid #caccce;
+  color: #868a8e;
+  font-size: 1.65em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 6px 7px;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+
+}
+#hashtag:focus {
+  color: #3a5977;
+  border-color: #5b7c9f;
+  outline: none;
+}
+
+#submitbtn {
+  position: relative;
+  top: -2px;
+  background: #5f7388;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  padding: 7px 9px;
+  text-decoration: none;
+  margin-bottom: 0;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #455668;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }

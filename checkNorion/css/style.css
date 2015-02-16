@@ -1,0 +1,39 @@
+body {
+	margin: 10px;
+}
+input[type=checkbox] {
+	position: absolute;
+/*
+    width: 30px;
+    height: 30px;*/
+    /*vertical-align: middle;*/
+      /*-moz-transform-origin: right bottom;*/
+    -webkit-transform: scale( 2 , 2 );
+    /*-webkit-transform-origin: right bottom;*/
+      -moz-transform: scale( 2 , 2 );
+
+}
+}
+#tenori {
+	position: relative;
+	margin: 20px;
+	margin-top: 26px;
+}
+#slider {
+	/*position: absolute;*/
+	bottom:1%;
+	height: 16px;
+	/*margin: 20px;*/
+	overflow: auto;
+}
+#slider .placeholder {
+	width: 3000px;
+	height: 10px;
+}
+#label {
+	position: absolute;
+	font-size: 10px;
+	left: 30px;
+	font-family: sans-serif;
+}
+  

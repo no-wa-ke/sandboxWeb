@@ -1,0 +1,30 @@
+<manifest alg="2" build="50" opt="true">
+  <folder name="css">
+    <file name="site_global.css" crc="4003109849"/>
+    <file name="index.css" crc="104696674" ref="index"/>
+    <file name="havefun.css" crc="4033575247" ref="havefun"/>
+    <file name="thankyou.css" crc="3792523584" ref="thankyou"/>
+  </folder>
+  <folder name="scripts">
+    <folder name="1.1">
+      <file name="jquery-1.7.min.js" crc="4285342938" ref="index:thankyou:havefun"/>
+      <file name="museutils.js" crc="56281167" ref="index:thankyou:havefun"/>
+      <file name="pie.js" crc="3786417276" ref="index:thankyou:havefun"/>
+      <file name="pie.htc" crc="354638364" ref="index:thankyou:havefun"/>
+      <file name="jquery.tobrowserwidth.js" crc="4225798834" ref="index"/>
+      <file name="webpro.js" crc="171035655" ref="index:thankyou"/>
+      <file name="musewpslideshow.js" crc="264849301" ref="index:thankyou"/>
+      <file name="jquery.museoverlay.js" crc="4273343390" ref="index:thankyou"/>
+    </folder>
+  </folder>
+  <folder name="images">
+    <file name="white_facebook.png" crc="3905514056" ref="index:havefun"/>
+    <file name="white_twitter_bird.png" crc="378760244" ref="index:havefun"/>
+    <file name="white_mobileme.png" crc="3811307252" ref="index"/>
+    <file name="jpeg_logo.gif" crc="19994657" ref="thankyou"/>
+    <file name="loading.gif" crc="3815509949" ref="thankyou"/>
+  </folder>
+  <file name="index.html" crc="4228590013" mt="1354464977206"/>
+  <file name="thankyou.html" crc="4021074610" mt="1354436719473"/>
+  <file name="havefun.html" crc="88849637" mt="1354463967527"/>
+</manifest>

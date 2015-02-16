@@ -1,0 +1,28 @@
+#u670,#u375,#u376,#u377
+{
+	position: fixed;
+}
+
+#U674_animation,#U395_animation,#U397_animation,#U396_animation
+{
+	border: none;
+}
+
+#u390,#u401
+{
+	position: fixed;
+}
+
+#u436
+{
+	position: fixed;
+}
+
+.ie #u377,.ie #u401,.ie #u436
+{
+	background-color: #FFFFFF;
+	opacity: 0.01;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+	filter: alpha(opacity=1);
+}
+

@@ -1,0 +1,124 @@
+body {
+    // background:grey;
+    background: url('img/background.jpg') no-repeat fixed center;
+
+    p {
+        font-family:"Arial Black", Gadget, sans-serif;
+    }
+    h1 {
+        font-family:"Arial Black", Gadget, sans-serif;
+    }
+
+
+}
+
+#main{
+
+
+.title  > h1 {
+    text-align:center;
+    display:inline;
+    padding:6px;
+    font-size:40px;
+    color:red;
+    position:relative;
+    top:15px;
+    letter-spacing: 2px;
+    border : 10px solid red;
+}
+.subtitle {
+    position:relative;
+    top:60px;
+    h1 {
+        font-style: italic;
+        font-size:33px;
+        text-align:center;
+        display:inline;
+        padding:6px;
+        color:red;
+        border : 10px solid red;
+    }
+	}
+
+.content {
+    position:relative;
+    top:64px;
+    p {
+        border : 10px solid red;
+        display:inline-block;
+        //for paragraoh
+        font-size:22px;
+        color:red;
+        padding:6px;
+        html.csscolumns & {
+            // column-count:2;
+            // column-gap: 10px;
+            // margin:10px;
+        }
+    }
+    a {
+        text-align: right;
+        color :blue;
+        &:hover {
+            color :yellow;
+        }
+    }
+
+	}
+}
+
+
+//----------------------------
+// previous contents,
+
+
+// .title > h1 {
+//     text-align:center;
+//     display:inline;
+//     padding:6px;
+//     font-size:40px;
+//     color:red;
+//     position:relative;
+//     top:15px;
+//     letter-spacing: 2px;
+//     border : 10px solid red;
+// }
+
+// .blog .entry {
+
+//     position:relative;
+//     top:60px;
+//     h1 {
+//         font-style: italic;
+//         font-size:33px;
+//         text-align:center;
+//         display:inline;
+//         padding:6px;
+//         color:red;
+//         border : 10px solid red;
+//     }
+// }
+// .content {
+//     position:relative;
+//     top:10px;
+//     p {
+//         border : 10px solid red;
+//         display:inline-block;
+//         //for paragraoh
+//         font-size:22px;
+//         color:red;
+//         padding:6px;
+//         html.csscolumns & {
+//             // column-count:2;
+//             // column-gap: 10px;
+//             // margin:10px;
+//         }
+//     }
+//     a {
+//         text-align: right;
+//         color :blue;
+//         &:hover {
+//             color :yellow;
+//         }
+//     }
+// }

@@ -1,0 +1,42 @@
+body {
+  background: url("img/background.jpg") no-repeat fixed center; }
+  body p {
+    font-family: "Arial Black", Gadget, sans-serif; }
+  body h1 {
+    font-family: "Arial Black", Gadget, sans-serif; }
+
+#main .title > h1 {
+  text-align: center;
+  display: inline;
+  padding: 6px;
+  font-size: 40px;
+  color: red;
+  position: relative;
+  top: 15px;
+  letter-spacing: 2px;
+  border: 10px solid red; }
+#main .subtitle {
+  position: relative;
+  top: 60px; }
+  #main .subtitle h1 {
+    font-style: italic;
+    font-size: 33px;
+    text-align: center;
+    display: inline;
+    padding: 6px;
+    color: red;
+    border: 10px solid red; }
+#main .content {
+  position: relative;
+  top: 64px; }
+  #main .content p {
+    border: 10px solid red;
+    display: inline-block;
+    font-size: 22px;
+    color: red;
+    padding: 6px; }
+  #main .content a {
+    text-align: right;
+    color: blue; }
+    #main .content a:hover {
+      color: yellow; }

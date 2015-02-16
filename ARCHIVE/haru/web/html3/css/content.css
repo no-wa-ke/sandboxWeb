@@ -1,0 +1,28 @@
+
+.emptybox{
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  clear: left;
+  margin-top: 0px;
+}
+
+#tooltip{
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 9px;
+  letter-spacing: normal;
+  text-align: left;
+  position: absolute;
+width:13em;
+  color: #000;
+  display: none;
+  background-color: #FFFF33;
+  font-size-adjust: 0.508;
+  font-weight: normal;
+  word-spacing: normal;
+  padding: 8px;
+  line-height: 15px;
+  }

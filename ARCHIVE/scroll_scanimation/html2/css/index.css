@@ -1,0 +1,48 @@
+html
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 0px;
+	background-image: none;
+	border-style: none;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	padding-bottom: 3000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u121
+{
+	z-index: 4;
+	width: 824px;
+	position: fixed;
+	top: 20px;
+	left: -652px;
+}
+
+#u121_img
+{
+	padding-right: 7px;
+}
+
+#u111
+{
+	z-index: 2;
+	width: 800px;
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	margin-left: -400px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

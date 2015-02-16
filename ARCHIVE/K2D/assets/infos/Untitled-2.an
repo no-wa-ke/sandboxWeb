@@ -1,0 +1,54 @@
+{
+
+	"PubChromeFrameInstallerPrompt":"none",
+	"PubUseChromeFrameInstaller":"false",
+	"PubWebDir":"./animation2/",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+            \"ElementKeyframes\": {\
+                \"${_k2dHP2-12}\": [], \
+                \"${_Stage}\": []\
+            }\
+      }\
+   }},\
+\"プリローダー\": {\
+   \"timelines\": {\
+\
+   }},\
+\"下位レベル\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"PosterImagePath":"images/Poster.png",
+	"PubDPSDir":"./animation2/",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
+	"HTMLFileName":"Untitled-2.html",
+	"symbol_stage":{
+		"element_${_k2dHP2-12}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"animationEnabled":"true",
+			"timelineColor":"0x91c767"},
+		"defaultStageParentHeight":"14px",
+		"dummyStageParentHeight":"14px",
+		"defaultStageParentWidth":"132px",
+		"element_${_Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"dummyStageParentWidth":"132px"},
+	"PubWeb":"false",
+	"CompZoomFactor":"100",
+	"StageZoomFactor":"219",
+	"pixelsPerMs":"0.2",
+	"PosterCapturePos":"0",
+	"TransitionIdCounter":"3",
+	"usedBOM":"false",
+	"PubDPS":"true",
+	"stage-Default Timeline_playhead_ms":"0",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"viewStartY":"0",
+	"nextElementColorIndex":"3"}
